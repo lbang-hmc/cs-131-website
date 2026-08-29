@@ -1,0 +1,70 @@
+site_name: "CS 131: Programming Languages"
+site_description: "Course site for CS 131: Programming Languages"
+site_author: "Lucas Bang"
+
+# site_url: "https://www.cs.hmc.edu/~bang/cs131/"
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Syllabus: syllabus.md
+  - Schedule: schedule.md
+  - Modules:
+      - modules/index.md
+      - "01.1: Welcome to Programming Languages": modules/01.1-welcome-to-programming-languages.md
+      - "02.1: Introduction to Haskell and Functional Programming": modules/02.1-introduction-to-haskell-and-functional-programming.md
+      - "02.2: Functions = Values": modules/02.2-functions-as-values.md
+      - "03.1: Lists, Tuples, Pattern Matching, and Parameterized Types": modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md
+      - "03.2: Haskell Data Types, Pattern Matching, and Type Classes": modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md
+      - "04.1: Code as Data, Evaluating Expressions": modules/04.1-code-as-data-evaluating-expressions.md
+      - "04.2: Representing Functions": modules/04.2-representing-functions.md
+  - Assignments:
+      - assignments/index.md
+      - "HW 1: peoPLe": assignments/hw01.md
+      - "HW 2: FUNctional programming": assignments/hw02.md
+      - "HW 3: Lists, Datatypes, and a Stack Machine": assignments/hw03.md
+      - "HW 4: Little Languages (Random Art and Regular Expressions)": assignments/hw04.md
+  - Labs:
+      - labs/index.md
+      - "Lab 2: GHCi Basics": labs/lab02.md
+      - "Lab 3: Tuples, Stacks, and Currying": labs/lab03.md
+      - "Lab 4: Boolean Expressions": labs/lab04.md
+  - FAQ: faq.md
+  - How-To Guides: how-to/index.md

@@ -1,0 +1,78 @@
+For claude: 
+- the notes column is for me only (when I might be travelling) so leave it out
+- leave out the "BUFFER" indicators 
+- add links to module and labs where we already have the content, but leave others unlinked for now
+- consider better formatting options. maybe one big grid isn't the best. maybe a week-by-week heading or something. formatting should be really easy to look at to know when things are happening and how to get to the corresponding materials 
+- ask questions as needed 
+
+
+
+SCHEDULE INFO
+
+"Orange  (All-together) days have in-class activities that we will do together.
+
+These classes include demos, programming labs, and discussions.
+
+Attendance is required, but if you feel that it is in your best interest or in the best interest of your fellow students not to attend, we trust your judgement. 
+
+If you do not attend, you should still be able to complete everything on your own."
+
+
+"Purple (Flexible) days are for your self-directed learning.
+
+These days are meant to allow for your own agency and flexibility. If you have completed all currently assigned work (HWs, Quizzes, Modules, Projects, etc.) you are not required to attend. Otherwise, join us to make progress on CS 131.
+
+These days can be considered group study, work, and review times. They are flexible days when professors and grutors are available for student-directed learning. "
+
+Week	Day	Date	Event	Modality	Topic	Module Completion Due 11am	Activity Due in Class 	HW Released	HW Due 11:50pm	Notes
+1	Tues	09-01-2026	Class 01	Together	Intro		Intro	HW 01 peoPLe		HW shift due date due to labor day
+1	Thur	09-03-2026	Class 02	Together	Haskell Live Interactive Demo 	1.1 Intro / what is CS131?	Lab 01: logging into server, getting starter HW files, editing files, submitting files, workflows			
+1	Sun	09-06-2026							"HW 01: peoPLe 11:59pm
+"	
+2	Mon	09-07-2026	LABOR DAY							
+2	Tues	09-08-2026	Class 03	Together	Haskell and Functional Programming	2.1 Intro to Haskell	Lab 02: Haskell and ghci	HW 02 FUNctional Programming		
+2	Thur	09-10-2026	Class 04	Flexible	Haskell and Functional Programming	2.2 Functional Programming and Higher Order Functions 				
+3	Mon	09-14-2026							"HW 02: FUNctional Programming
+"	
+3	Tues	09-15-2026	Class 05	Together	Lists & Pattern Matching	3.1 FP, HOF, Lists	Lab 03: FP	HW 03 Lists, Data Types, Stack Machines		
+3	Thur	09-17-2026	Class 06	Together	Data Types & Pattern Matching 	3.2 Data Types	QUIZ 1			
+4	Mon	09-21-2026							HW 03 Lists, Data Types, Stack Machines	
+4	Tues	09-22-2026	Class 07	Together	Syntax / Semantics	4.1 Syntax / Semantics 	Lab 04: Eval ASTs 	HW 04 Little Languages (RegEx, Art)		
+4	Thur	09-24-2026	Class 08	Flexible	Eval	4.2 Eval / Interpretation 				
+5	Mon	09-28-2026							HW 04 Little Languages (RegEx, Art)	
+5	Tues	09-29-2026	Class 09	Together	Eval / Compiling	5.1 Scope	Lab 05: PicPlot	HW 05 Simple PicPlot Compiling		
+5	Thur	10-01-2026	Class 10	Flexible	Eval / Closures	5.2 Environments? Closures?				
+6	Mon	10-05-2026							HW 05 Simple PicPlot Part 1: Compiling	
+6	Tues	10-06-2026	Class 11	Together	Parsing	6.1 Parsing 	Lab 06: Parsing	HW 06 PicPlot Parsing 		OOPSLA-ISSTA
+6	Thur	10-08-2026	Class 12	Flexible	Parsing	6.2 Parser Combinators 				OOPSLA-ISSTA
+7	Mon	10-12-2026							HW 06 PicPlot Part 2: Parsing 	
+7	Tues	10-13-2026	Class 13	Together	Functors / Monads	7.1 Functors 	Lab 07: Monads	HW 07 Monadic Eval 		
+7	Thur	10-15-2026	Class 14	Together	Functors / Monads	7.2 Monads 	QUIZ 2			
+8	Mon	10-19-2026								
+8	Tues	10-20-2026	FALL BREAK							
+8	Thur	10-22-2026	Class 15		Lambda Calc	8.1 Lambda Calc				
+9	Mon	10-26-2026							HW 07 Monadic Eval 	
+9	Tues	10-27-2026	Class 16	Together	Lambda Calc	9.1 Lambda Calc 	Lab 08: LC	HW 08 Lambda Calc		
+9	Thur	10-29-2026	Class 17	Flexible 	Lambda Calc	9.2 Lambda Calc 				
+10	Mon	11-02-2026							HW 08 Lambda Calc	
+10	Tues	11-03-2026	Class  18	Together	Lambda Calc --> Raskell	10.1 LC --> Raskell 	Lab 09: S-Exps (Raskell)	HW 09 Raskell Eval		
+10	Thur	11-05-2026	Class  19	Flexible 	Lambda Calc --> Raskell	10.2 LC --> Raskell 				
+11	Mon	11-09-2026							HW 09 Raskell Eval	
+11	Tues	11-10-2026	Class 20	Together	BUFFER		Lab 10: Parsing S-Exps	HW 10 Raskell Parser 		
+11	Thur	11-12-2026	Class 21	Flexible 	Types	11.1 Types				HaPoP?
+12	Mon	11-16-2026							HW 10 Raskell Parser 	
+12	Tues	11-17-2026	Class 22	Together	Types	12.1 Types	Lab 11: Types	HW 11: Types		
+12	Thur	11-19-2026	Class 23	Together	Types	12.2 Types 	QUIZ 3			
+13	Mon	11-23-2026							HW 11: Types	
+13	Tues	11-24-2026	TG BREAK							
+13	Thur	11-26-2026	TG BREAK							
+14	Mon	11-30-2026							(HW 11: Types)	
+14	Tues	12-01-2026	Class 24	Together	peoPLe	14.1 peoPLe 	Lab 12: peoPLe	HW 12: peoPLe		
+14	Thur	12-03-2026	Class 25	Together	peoPLe		peoPLe Workshop			
+15	Mon	12-07-2026							HW 12: peoPLe	
+15	Tues	12-08-2026	Class 26		BUFFER					
+15	Thur	12-10-2026	Class 27		BUFFER		QUIZ 4			
+
+
+
+
