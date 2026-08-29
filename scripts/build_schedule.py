@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Generate docs/schedule.md from the raw schedule.txt data (this script's
-sibling, scripts/schedule.txt). Encodes the spreadsheet rows as structured
-data, then renders a week-by-week set of small tables with links to
-existing module/lab/HW pages (and plain text where no page exists yet).
+"""Generate content/schedule.md from the raw schedule.txt data (this
+script's sibling, scripts/schedule.txt). Encodes the spreadsheet rows as
+structured data, then renders a week-by-week set of small tables with
+links to existing module/lab/HW pages (and plain text where no page
+exists yet).
 
 To regenerate the live page after editing `rows` below (new week, moved
 date, or a newly-built module/lab/HW that should now get linked — add
 it to the relevant *_LINKS dict), run from the repo root:
 
-    python3 scripts/build_schedule.py > docs/schedule.md
+    python3 scripts/build_schedule.py > content/schedule.md
 
 See MEMORY.md's "Schedule page" entry for the data decisions baked into
 `rows` (resolved ambiguities, dropped columns, etc.) before changing it.

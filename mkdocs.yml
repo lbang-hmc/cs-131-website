@@ -2,6 +2,8 @@ site_name: "CS 131: Programming Languages"
 site_description: "Course site for CS 131: Programming Languages"
 site_author: "Lucas Bang"
 
+docs_dir: content
+
 # site_url: "https://www.cs.hmc.edu/~bang/cs131/"
 
 theme:

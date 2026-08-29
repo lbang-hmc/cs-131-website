@@ -33,9 +33,9 @@ cs-131-website/
 ├── Makefile          # Shortcuts: make serve / build / clean
 ├── .venv/            # Local Python virtual environment (not committed)
 ├── scripts/
-│   ├── build_schedule.py # Generates docs/schedule.md from schedule.txt
+│   ├── build_schedule.py # Generates content/schedule.md from schedule.txt
 │   └── schedule.txt      # Raw schedule data (source of truth for the generator)
-└── docs/             # All page content (Markdown)
+└── content/          # All page content (Markdown) — set as docs_dir in mkdocs.yml
     ├── index.md              # Home page
     ├── syllabus.md           # Syllabus
     ├── schedule.md           # Weekly schedule (generated — see scripts/build_schedule.py)
@@ -51,7 +51,7 @@ cs-131-website/
 
 ### Add a new module page
 
-1. Create `docs/modules/02-foo.md` (copy `01-intro.md` as a template).
+1. Create `content/modules/02-foo.md` (copy `01-intro.md` as a template).
 2. Add a line to the `Modules:` section of `mkdocs.yml`:
    ```yaml
    - "02: Foo": modules/02-foo.md
@@ -59,7 +59,7 @@ cs-131-website/
 
 ### Add a new how-to guide
 
-1. Create `docs/how-to/some-guide.md`.
+1. Create `content/how-to/some-guide.md`.
 2. Change the `How-To Guides:` entry in `mkdocs.yml` from a single file to a section:
    ```yaml
    - How-To Guides:
