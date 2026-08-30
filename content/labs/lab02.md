@@ -3,7 +3,7 @@
 This lab is your first real time in `ghci`, the interactive Haskell interpreter. There's no coding challenge to solve here — the point is just to get comfortable running Haskell, reading what it tells you, and building the habit of predicting an output *before* you run something and checking your prediction against reality. You'll be working with functions from Module 02.1 and 02.2, plus a few new ones (`filter`, `reverse`, `show`, `sort`) that behave a lot like `map` once you see the pattern.
 
 !!! note "How you'll get set up"
-    We're still finalizing the workflow for accessing the programming server and starter files for this course. Instructions will be posted here once they're ready — for now, this page covers what the lab actually asks you to do. The [How-To Guides](../how-to/index.md) section will eventually cover connecting to the server and running `ghci`.
+    See [Connecting to the Server with VS Code](../how-to/connecting-with-vscode.md) if you haven't gotten to a `ghci` prompt on the server yet. We're still finalizing the workflow for distributing starter files for this course — instructions will be posted here once that's ready.
 
 ## Getting Connected
 

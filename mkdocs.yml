@@ -72,3 +72,4 @@ nav:
   - How-To Guides:
       - how-to/index.md
       - "Connecting to the Server with VS Code": how-to/connecting-with-vscode.md
+      - "Writing and Running Tests": how-to/writing-and-running-tests.md
