@@ -128,7 +128,7 @@ So far you've only typed expressions directly into `ghci`. Now try working from 
     ```
 
     Save the file.
-5. Make sure you're in the course Docker environment (`cs131env`), navigate back into `lab2`, start `ghci`, and load your file:
+5. Navigate back into `lab2`, start `ghci`, and load your file:
 
     ```
     :load lab2.hs

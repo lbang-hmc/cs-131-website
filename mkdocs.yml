@@ -69,4 +69,6 @@ nav:
       - "Lab 3: Tuples, Stacks, and Currying": labs/lab03.md
       - "Lab 4: Boolean Expressions": labs/lab04.md
   - FAQ: faq.md
-  - How-To Guides: how-to/index.md
+  - How-To Guides:
+      - how-to/index.md
+      - "Connecting to the Server with VS Code": how-to/connecting-with-vscode.md
