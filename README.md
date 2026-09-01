@@ -22,6 +22,21 @@ make build   # output goes to site/
 make clean   # delete the site/ folder
 ```
 
+### Troubleshooting: `ModuleNotFoundError: No module named 'mkdocs'`
+
+If `make serve` suddenly fails with a missing `mkdocs` (or `pip`) even though
+the `.venv/` folder is still there, your system Python was probably upgraded
+(e.g. 3.12 → 3.14). A venv is tied to the exact Python minor version it was
+created with; its packages live in `.venv/lib/pythonX.Y/`, which the new
+interpreter no longer looks in. Just recreate it:
+
+```bash
+rm -rf .venv
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 ---
 
 ## Directory structure
