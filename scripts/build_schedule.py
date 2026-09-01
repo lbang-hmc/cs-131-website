@@ -17,34 +17,22 @@ See MEMORY.md's "Schedule page" entry for the data decisions baked into
 
 import datetime
 
+# NOTE: Only pages that are currently live (linked in mkdocs.yml `nav`) appear
+# here. Modules after 01.1, all labs, and HW 02+ are hidden for the early
+# semester, so they render as plain text on the schedule. Add entries back as
+# those pages go live.
 MODULE_LINKS = {
     "1.1 Intro / what is CS131?": "modules/01.1-welcome-to-programming-languages.md",
-    "2.1 Intro to Haskell": "modules/02.1-introduction-to-haskell-and-functional-programming.md",
-    "2.2 Functional Programming and HOF": "modules/02.2-functions-as-values.md",
-    "3.1 FP, HOF, Lists": "modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md",
-    "3.2 Data Types": "modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md",
-    "4.1 Syntax / Semantics": "modules/04.1-code-as-data-evaluating-expressions.md",
-    "4.2 Eval / Interpretation": "modules/04.2-representing-functions.md",
 }
 
-LAB_LINKS = {
-    "Lab 02: Haskell and ghci": "labs/lab02.md",
-    "Lab 03: FP": "labs/lab03.md",
-    "Lab 04: Eval ASTs": "labs/lab04.md",
-}
+LAB_LINKS = {}
 
 HW_LINKS = {
     "HW 01 peoPLe": ("HW 01: peoPLe", "assignments/hw01.md"),
-    "HW 02 FUNctional Programming": ("HW 02: FUNctional Programming", "assignments/hw02.md"),
-    "HW 03 Lists, Data Types, Stack Machines": ("HW 03: Lists, Data Types, Stack Machines", "assignments/hw03.md"),
-    "HW 04 Little Languages (RegEx, Art)": ("HW 04: Little Languages (RegEx, Art)", "assignments/hw04.md"),
 }
 
 HW_DUE_LINKS = {
     "HW 01: peoPLe": ("HW 01: peoPLe", "assignments/hw01.md"),
-    "HW 02: FUNctional Programming": ("HW 02: FUNctional Programming", "assignments/hw02.md"),
-    "HW 03 Lists, Data Types, Stack Machines": ("HW 03: Lists, Data Types, Stack Machines", "assignments/hw03.md"),
-    "HW 04 Little Languages (RegEx, Art)": ("HW 04: Little Languages (RegEx, Art)", "assignments/hw04.md"),
 }
 
 BADGE = {"Together": "🟧", "Flexible": "🟪"}

@@ -33,7 +33,7 @@ The first time you connect, VS Code needs to set up the SSH host and install som
 
 - **Open your files:** click the file explorer icon and choose **Open Folder**, then open your home directory (it has the same name as your username). The first time you do this, VS Code will ask for your password again and may ask whether to trust the folder — say yes to both.
 - **Use a terminal:** open one with `` Ctrl+` `` — this is a real shell running on the server, not your local machine. Try `pwd` and `ls` to get oriented.
-- **Try Haskell:** run `ghci` to get an interactive Haskell interpreter — similar to interpreters you may have used for Python or Racket. Type an expression and hit enter to evaluate it (e.g. `1 + 41`, or `sqrt 42`); type `:q` (or hit `Ctrl+D`) to quit back to the shell. (This is the same command used throughout the [labs](../labs/lab02.md) — you'll run it constantly this semester.)
+- **Try Haskell:** run `ghci` to get an interactive Haskell interpreter — similar to interpreters you may have used for Python or Racket. Type an expression and hit enter to evaluate it (e.g. `1 + 41`, or `sqrt 42`); type `:q` (or hit `Ctrl+D`) to quit back to the shell. (This is the same command used throughout the [labs](../labs/index.md) — you'll run it constantly this semester.)
 
 ## 5. Disconnecting and reconnecting
 

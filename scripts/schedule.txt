@@ -20,7 +20,7 @@ If you do not attend, you should still be able to complete everything on your ow
 
 "Purple (Flexible) days are for your self-directed learning.
 
-These days are meant to allow for your own agency and flexibility. If you have completed all currently assigned work (HWs, Quizzes, Modules, Projects, etc.) you are not required to attend. Otherwise, join us to make progress on CS 131.
+These days are meant to allow for your own agency and flexibility. If you have completed all currently assigned work (HWs, Quizzes, Modules, etc.) you are not required to attend. Otherwise, join us to make progress on CS 131.
 
 These days can be considered group study, work, and review times. They are flexible days when professors and grutors are available for student-directed learning. "
 

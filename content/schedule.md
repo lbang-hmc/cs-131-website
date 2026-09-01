@@ -24,30 +24,30 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 7 | 🎉 *Labor Day — no class* | | | |
-| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | [2.1 Intro to Haskell](modules/02.1-introduction-to-haskell-and-functional-programming.md) | [Lab 02: Haskell and ghci](labs/lab02.md) | Released: [HW 02: FUNctional Programming](assignments/hw02.md) |
-| Thu Sep 10 | **Class 4** — 🟪 *Flexible* — Haskell and Functional Programming | [2.2 Functional Programming and HOF](modules/02.2-functions-as-values.md) |  |  |
+| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | 2.1 Intro to Haskell | Lab 02: Haskell and ghci | Released: HW 02 FUNctional Programming |
+| Thu Sep 10 | **Class 4** — 🟪 *Flexible* — Haskell and Functional Programming | 2.2 Functional Programming and HOF |  |  |
 
 ## Week 3 — September 14–17
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 14 | | | | **Due:** [HW 02: FUNctional Programming](assignments/hw02.md) · 11:59pm |
-| Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | [3.1 FP, HOF, Lists](modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md) | [Lab 03: FP](labs/lab03.md) | Released: [HW 03: Lists, Data Types, Stack Machines](assignments/hw03.md) |
-| Thu Sep 17 | **Class 6** — 🟧 *Together* — Data Types & Pattern Matching | [3.2 Data Types](modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md) | 📝 **Quiz 1** |  |
+| Mon Sep 14 | | | | **Due:** HW 02: FUNctional Programming · 11:59pm |
+| Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | 3.1 FP, HOF, Lists | Lab 03: FP | Released: HW 03 Lists, Data Types, Stack Machines |
+| Thu Sep 17 | **Class 6** — 🟧 *Together* — Data Types & Pattern Matching | 3.2 Data Types | 📝 **Quiz 1** |  |
 
 ## Week 4 — September 21–24
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 21 | | | | **Due:** [HW 03: Lists, Data Types, Stack Machines](assignments/hw03.md) · 11:59pm |
-| Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | [4.1 Syntax / Semantics](modules/04.1-code-as-data-evaluating-expressions.md) | [Lab 04: Eval ASTs](labs/lab04.md) | Released: [HW 04: Little Languages (RegEx, Art)](assignments/hw04.md) |
-| Thu Sep 24 | **Class 8** — 🟪 *Flexible* — Eval | [4.2 Eval / Interpretation](modules/04.2-representing-functions.md) |  |  |
+| Mon Sep 21 | | | | **Due:** HW 03 Lists, Data Types, Stack Machines · 11:59pm |
+| Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | 4.1 Syntax / Semantics | Lab 04: Eval ASTs | Released: HW 04 Little Languages (RegEx, Art) |
+| Thu Sep 24 | **Class 8** — 🟪 *Flexible* — Eval | 4.2 Eval / Interpretation |  |  |
 
 ## Week 5 — Sep 28 – Oct 1
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 28 | | | | **Due:** [HW 04: Little Languages (RegEx, Art)](assignments/hw04.md) · 11:59pm |
+| Mon Sep 28 | | | | **Due:** HW 04 Little Languages (RegEx, Art) · 11:59pm |
 | Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | 5.1 Scope | Lab 05: PicPlot | Released: HW 05 Simple PicPlot Compiling |
 | Thu Oct 1 | **Class 10** — 🟪 *Flexible* — Eval / Closures | 5.2 Environments? Closures? |  |  |
 
