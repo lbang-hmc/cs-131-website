@@ -20,6 +20,7 @@ To build the static site (e.g. for deployment):
 ```bash
 make build   # output goes to site/
 make clean   # delete the site/ folder
+make deploy  # build, then rsync site/ to bang@knuth:~/public_html/cs131
 ```
 
 ### Troubleshooting: `ModuleNotFoundError: No module named 'mkdocs'`
