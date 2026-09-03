@@ -70,7 +70,9 @@ nav:
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md
-  - Labs: labs/index.md
+  - Labs:
+      - labs/index.md
+      - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
   - FAQ: faq.md
   - How-To Guides:
       - how-to/index.md

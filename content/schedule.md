@@ -16,7 +16,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Tue Sep 1 | **Class 1** — 🟧 *Together* — Intro |  |  | Released: [HW 01: peoPLe](assignments/hw01.md) |
-| Thu Sep 3 | **Class 2** — 🟧 *Together* — Haskell Live Interactive Demo | [1.1 Intro / what is CS131?](modules/01.1-welcome-to-programming-languages.md) | Lab 01: logging into server, getting starter HW files, editing files, submitting files, workflows |  |
+| Thu Sep 3 | **Class 2** — 🟧 *Together* — Haskell Live Interactive Demo | [1.1 Intro / what is CS131?](modules/01.1-welcome-to-programming-languages.md) | [Lab 01: Getting Connected and Running Haskell](labs/lab01.md) |  |
 | Sun Sep 6 | | | | **Due:** [HW 01: peoPLe](assignments/hw01.md) · 11:59pm |
 
 ## Week 2 — September 7–10
