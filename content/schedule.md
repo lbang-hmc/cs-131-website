@@ -24,8 +24,8 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 7 | 🎉 *Labor Day — no class* | | | |
-| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | 2.1 Intro to Haskell | Lab 02: Haskell and ghci | Released: HW 02 FUNctional Programming |
-| Thu Sep 10 | **Class 4** — 🟪 *Flexible* — Haskell and Functional Programming | 2.2 Functional Programming and HOF |  |  |
+| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | [2.1 Intro to Haskell](modules/02.1-introduction-to-haskell-and-functional-programming.md) | Lab 02: Haskell and ghci | Released: HW 02 FUNctional Programming |
+| Thu Sep 10 | **Class 4** — 🟪 *Flexible* — Haskell and Functional Programming | [2.2 Functional Programming and HOF](modules/02.2-functions-as-values.md) |  |  |
 
 ## Week 3 — September 14–17
 
