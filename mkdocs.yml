@@ -79,3 +79,4 @@ nav:
       - "Connecting to the Server with VS Code": how-to/connecting-with-vscode.md
       - "Text Editors on the Server": how-to/text-editors-on-the-server.md
       - "Writing and Running Tests": how-to/writing-and-running-tests.md
+      - "The Homework Workflow": how-to/homework-workflow.md
