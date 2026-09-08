@@ -366,10 +366,6 @@ Attendance requirements for each day are specified in the [schedule](schedule.md
 - 🟧 **Together** — Required attendance, with a planned in-class activity (demo, directed lab, or discussion) that benefits from everyone being present. Attending earns course credit, but will not make or break your score.
 - 🟪 **Flexible** — If you have completed all currently assigned work, you are not required to attend. Otherwise, please spend class time making progress on CS 131.
 
-### Participation and Feedback
-
-We track attendance through participation and feedback forms. For every class session (including flexible days), there will be a corresponding form on Gradescope. Please complete this form whether or not you attended — even if you don't attend, you can receive partial credit for filling it out.
-
 ### Absences
 
 If you need to miss a required class, please let us know via the [excused absence form](https://forms.gle/mcCiQxdoEoYgK3Z58). (No need to fill this out for flexible days.) For complex absences, email the instructor or make an appointment.
