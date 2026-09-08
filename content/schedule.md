@@ -33,7 +33,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Sep 14 | | | | **Due:** [HW 02: FUNctional Programming](assignments/hw02.md) · 11:59pm |
 | Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | 3.1 FP, HOF, Lists | Lab 03: FP | Released: HW 03 Lists, Data Types, Stack Machines |
-| Thu Sep 17 | **Class 6** — 🟧 *Together* — Data Types & Pattern Matching | 3.2 Data Types | 📝 **Quiz 1** |  |
+| Thu Sep 17 | **Class 6** — 🟪 *Flexible* — Data Types & Pattern Matching | 3.2 Data Types |  |  |
 
 ## Week 4 — September 21–24
 
@@ -41,7 +41,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Sep 21 | | | | **Due:** HW 03 Lists, Data Types, Stack Machines · 11:59pm |
 | Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | 4.1 Syntax / Semantics | Lab 04: Eval ASTs | Released: HW 04 Little Languages (RegEx, Art) |
-| Thu Sep 24 | **Class 8** — 🟪 *Flexible* — Eval | 4.2 Eval / Interpretation |  |  |
+| Thu Sep 24 | **Class 8** — 🟧 *Together* — Eval | 4.2 Eval / Interpretation | 📝 **Quiz 1** |  |
 
 ## Week 5 — Sep 28 – Oct 1
 
