@@ -282,9 +282,6 @@ Your course grade is based on **2,990 points** across 52 submissions, in five ca
 | Quizzes | 4 | 150 each | 600 | 20.1% |
 | **Total** | **52** | — | **2,990** | **100%** |
 
-!!! note "Letter-grade cutoffs"
-    Letter-grade cutoffs for this semester will be announced by email and posted here.
-
 The itemized point values for each category are below.
 
 ??? abstract "Homework — 1,200 points"
