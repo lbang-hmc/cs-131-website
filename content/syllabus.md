@@ -271,8 +271,93 @@ If you are ever unsure whether a particular use is allowed, ask before using it.
 
 ### Grade Breakdown
 
-!!! note "To be announced"
-    The full points breakdown and letter-grade cutoffs for this semester are being finalized and will be posted here soon.
+Your course grade is based on **2,990 points** across 52 submissions, in five categories:
+
+| Category | Count | Point value | Total points | Approx. share of grade |
+|----------|:-----:|:-----------:|:------------:|:----------------------:|
+| Homework | 12 | 100 each | 1,200 | 40.1% |
+| Module completions | 22 | 20 each | 440 | 14.7% |
+| Regular labs | 12 | 50 each | 600 | 20.1% |
+| Discussion labs | 2 | 75 each | 150 | 5.0% |
+| Quizzes | 4 | 150 each | 600 | 20.1% |
+| **Total** | **52** | — | **2,990** | **100%** |
+
+!!! note "Letter-grade cutoffs"
+    Letter-grade cutoffs for this semester will be announced by email and posted here.
+
+The itemized point values for each category are below.
+
+??? abstract "Homework — 1,200 points"
+    | Assignment | Points |
+    |------------|:------:|
+    | HW 01: peoPLe | 100 |
+    | HW 02: FUNctional Programming | 100 |
+    | HW 03: Lists, Data Types, Stack Machines | 100 |
+    | HW 04: Little Languages (RegEx, Art) | 100 |
+    | HW 05: PicPlot Part 1: Compiling | 100 |
+    | HW 06: PicPlot Part 2: Parsing | 100 |
+    | HW 07: Monadic Eval | 100 |
+    | HW 08: Lambda Calc | 100 |
+    | HW 09: Raskell Eval | 100 |
+    | HW 10: Raskell Parser | 100 |
+    | HW 11: Types | 100 |
+    | HW 12: peoPLe | 100 |
+    | **Homework total** | **1,200** |
+
+??? abstract "Module completions — 440 points"
+    | Module | Points |
+    |--------|:------:|
+    | Module 1.1: Intro / What is CS 131? | 20 |
+    | Module 2.1: Intro to Haskell | 20 |
+    | Module 2.2: Functional Programming and Higher-Order Functions | 20 |
+    | Module 3.1: FP, HOF, Lists | 20 |
+    | Module 3.2: Data Types | 20 |
+    | Module 4.1: Syntax / Semantics | 20 |
+    | Module 4.2: Eval / Interpretation | 20 |
+    | Module 5.1: Scope | 20 |
+    | Module 5.2: Environments / Closures | 20 |
+    | Module 6.1: Parsing | 20 |
+    | Module 6.2: Parser Combinators | 20 |
+    | Module 7.1: Functors | 20 |
+    | Module 7.2: Monads | 20 |
+    | Module 8.1: Lambda Calculus | 20 |
+    | Module 9.1: Lambda Calculus | 20 |
+    | Module 9.2: Lambda Calculus | 20 |
+    | Module 10.1: LC → Raskell | 20 |
+    | Module 10.2: LC → Raskell | 20 |
+    | Module 11.1: Types | 20 |
+    | Module 12.1: Types | 20 |
+    | Module 12.2: Types | 20 |
+    | Module 14.1: peoPLe | 20 |
+    | **Module total** | **440** |
+
+??? abstract "Labs — 750 points"
+    | Lab | Points |
+    |-----|:------:|
+    | Lab 01: Server / Course Workflow | 50 |
+    | Lab 02: Haskell and GHCi | 50 |
+    | Lab 03: Functional Programming | 50 |
+    | Lab 04: Eval ASTs | 50 |
+    | Lab 05: PicPlot | 50 |
+    | Lab 06: Parsing | 50 |
+    | Lab 07: Monads | 50 |
+    | Lab 08: Lambda Calculus | 50 |
+    | Lab 09: S-Expressions (Raskell) | 50 |
+    | Lab 10: Parsing S-Expressions | 50 |
+    | Lab 11: Types | 50 |
+    | Lab 12: peoPLe | 50 |
+    | Discussion Lab 01 | 75 |
+    | Discussion Lab 02 | 75 |
+    | **Lab total** | **750** |
+
+??? abstract "Quizzes — 600 points"
+    | Quiz | Points |
+    |------|:------:|
+    | Quiz 1 | 150 |
+    | Quiz 2 | 150 |
+    | Quiz 3 | 150 |
+    | Quiz 4 | 150 |
+    | **Quiz total** | **600** |
 
 ### Attendance
 
