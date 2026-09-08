@@ -54,7 +54,6 @@ not_in_nav: |
   /labs/lab02.md
   /labs/lab03.md
   /labs/lab04.md
-  /assignments/hw02.md
   /assignments/hw03.md
   /assignments/hw04.md
 
@@ -70,6 +69,7 @@ nav:
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md
+      - "HW 2: FUNctional Programming": assignments/hw02.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md

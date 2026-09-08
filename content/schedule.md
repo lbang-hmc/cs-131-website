@@ -24,14 +24,14 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 7 | 🎉 *Labor Day — no class* | | | |
-| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | [2.1 Intro to Haskell](modules/02.1-introduction-to-haskell-and-functional-programming.md) | Lab 02: Haskell and ghci | Released: HW 02 FUNctional Programming |
+| Tue Sep 8 | **Class 3** — 🟧 *Together* — Haskell and Functional Programming | [2.1 Intro to Haskell](modules/02.1-introduction-to-haskell-and-functional-programming.md) | Lab 02: Haskell and ghci | Released: [HW 02: FUNctional Programming](assignments/hw02.md) |
 | Thu Sep 10 | **Class 4** — 🟪 *Flexible* — Haskell and Functional Programming | [2.2 Functional Programming and HOF](modules/02.2-functions-as-values.md) |  |  |
 
 ## Week 3 — September 14–17
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 14 | | | | **Due:** HW 02: FUNctional Programming · 11:59pm |
+| Mon Sep 14 | | | | **Due:** [HW 02: FUNctional Programming](assignments/hw02.md) · 11:59pm |
 | Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | 3.1 FP, HOF, Lists | Lab 03: FP | Released: HW 03 Lists, Data Types, Stack Machines |
 | Thu Sep 17 | **Class 6** — 🟧 *Together* — Data Types & Pattern Matching | 3.2 Data Types | 📝 **Quiz 1** |  |
 
