@@ -191,10 +191,71 @@ In particular:
 - If you see something that seems like it ought to be off-limits (another student's repository, files from a previous semester), immediately contact us rather than looking further.
 - If unsure whether something is allowed, document what you did and consult course staff — ideally before taking the questionable action.
 
-### Use of AI / LLM Tools
+### Use of AI Tools
 
-!!! note "Policy under discussion"
-    We will discuss the course policy on AI and large language model tools (ChatGPT, GitHub Copilot, Claude, and similar) during the first class, and the agreed policy will be posted here afterward. Until then, do not use these tools on any CS 131 work.
+The goal of the work in this course is for you to do the programming, reasoning, explaining, and writing. For that reason, **AI-generated content may not be used in anything you submit for credit.**
+
+This applies to all submitted work, including:
+
+- source code,
+- written answers,
+- programming-assignment responses,
+- reflections,
+- lab responses,
+- module-completion responses,
+- quiz answers,
+- comments or explanations in code,
+- debugging writeups,
+- test cases you are asked to write,
+- and any other material you turn in.
+
+#### The Basic Rule
+
+!!! quote "If you submit it, it must be written by you."
+
+Do not copy or paste text or code from an AI tool into your work. Do not use an AI code generator inside your editor to generate code that you then submit. Any submitted code or prose must be typed by a human, except for ordinary non-AI autocomplete and editing features such as syntax completion, identifier completion, formatting, and similar traditional IDE tools.
+
+!!! warning "Penalty"
+    Using an LLM or other generative-AI system to generate any portion of work that you submit will result in a **zero on that assignment**.
+
+#### AI Can Still Be Used for Learning
+
+You may use AI tools to help you study or understand course material, provided that the AI-generated material does not become part of what you submit.
+
+For example, acceptable uses include:
+
+- asking for another explanation of some concept;
+- asking for a simpler example of an idea from class;
+- asking what an error message means;
+- asking for help understanding why a piece of code you wrote is producing a particular error;
+- asking for practice questions;
+- asking an AI to quiz you before a quiz;
+- asking for a summary of a concept you are reviewing;
+- asking for help interpreting documentation.
+
+The point is that the AI can act as a tutor or study aid, but not as the author of your submitted work.
+
+#### Concrete Examples
+
+!!! success "Acceptable"
+    - You write a Haskell function yourself, get a confusing type error, and ask an LLM, "What does this error message mean?"
+    - You ask, "Can you explain the difference between a parameter and an argument with a new example?"
+    - You ask for five practice problems about scope, solve them yourself, and do not submit the AI-generated problems or solutions.
+    - You ask an LLM to explain a concept from the module in a different way, then close the AI tool and write your own Gradescope response yourself.
+    - Your editor completes a variable name, inserts a closing parenthesis, formats your code, or provides ordinary non-AI autocomplete.
+
+!!! failure "Not acceptable"
+    - Asking an LLM to write a function for an assignment and then pasting that function into your submission.
+    - Asking an LLM to "improve," rewrite, or polish a reflection or implementation report that you will submit.
+    - Giving an assignment question to an LLM and submitting its answer, even with minor edits.
+    - Using GitHub Copilot, Cursor, ChatGPT, Claude, or another AI coding tool to generate code that becomes part of your submitted program.
+    - Asking an LLM to generate test cases, comments, explanations, or debugging writeups that you are required to submit.
+    - Copying an AI-generated answer by hand instead of copy/pasting it. The issue is who generated the work, not how it entered the document.
+
+!!! tip "A useful test"
+    Could you have produced the submitted words or code without seeing the AI-generated version first? If the AI generated the substance of what you are turning in, do not submit it.
+
+If you are ever unsure whether a particular use is allowed, ask before using it. I am happy to clarify.
 
 ---
 
