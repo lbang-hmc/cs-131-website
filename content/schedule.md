@@ -33,7 +33,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Sep 14 | | | | **Due:** [HW 02: FUNctional Programming](assignments/hw02.md) · 11:59pm |
 | Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | [3.1 FP, HOF, Lists](modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md) | Lab 03: FP | Released: HW 03 Lists, Data Types, Stack Machines |
-| Thu Sep 17 | **Class 6** — 🟪 *Flexible* — Data Types & Pattern Matching | 3.2 Data Types |  |  |
+| Thu Sep 17 | **Class 6** — 🟪 *Flexible* — Data Types & Pattern Matching | [3.2 Data Types](modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md) |  |  |
 
 ## Week 4 — September 21–24
 
