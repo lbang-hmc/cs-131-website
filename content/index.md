@@ -18,8 +18,17 @@ In-class practical learning sessions (times to work specifically on course assig
 
 Office hours and grutoring are in person in **MCSC 203 / 204** (the computer labs where we have class).
 
-- **Prof. Bang:** Mondays 10:30am – 11:30am, or [by appointment](https://calendar.app.google/BZ7zjumboM1ZTbJTA).
-- **Grutors:** schedule to be announced.
+- **Prof. Bang:** Mondays 10:00am – 11:00am, or [by appointment](https://calendar.app.google/BZ7zjumboM1ZTbJTA).
+
+**In-class help (grutors):**
+
+- **Wil:** Tuesdays 9:35am – 10:50am
+- **Elliot:** Thursdays 9:35am – 10:50am
+
+**Tutoring:**
+
+- **Elliot:** Saturdays 2:00pm – 4:00pm
+- **Wil:** Sundays 2:00pm – 3:30pm (not available this Sunday)
 
 ---
 
