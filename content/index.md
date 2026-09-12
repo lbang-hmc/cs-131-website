@@ -28,7 +28,7 @@ Office hours and grutoring are in person in **MCSC 203 / 204** (the computer lab
 **Tutoring:**
 
 - **Elliot:** Saturdays 2:00pm – 4:00pm
-- **Wil:** Sundays 2:00pm – 3:30pm (not available this Sunday)
+- **Wil:** Sundays 2:00pm – 3:30pm
 
 ---
 
