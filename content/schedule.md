@@ -32,14 +32,14 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 14 | | | | **Due:** [HW 02: FUNctional Programming](assignments/hw02.md) · 11:59pm |
-| Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | [3.1 FP, HOF, Lists](modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md) | [Lab 03: Tuples, Stacks, and Currying](labs/lab03.md) | Released: HW 03 Lists, Data Types, Stack Machines |
+| Tue Sep 15 | **Class 5** — 🟧 *Together* — Lists & Pattern Matching | [3.1 FP, HOF, Lists](modules/03.1-lists-tuples-pattern-matching-and-parameterized-types.md) | [Lab 03: Tuples, Stacks, and Currying](labs/lab03.md) | Released: [HW 03: Lists, Datatypes, and a Stack Machine](assignments/hw03.md) |
 | Thu Sep 17 | **Class 6** — 🟪 *Flexible* — Data Types & Pattern Matching | [3.2 Data Types](modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md) |  |  |
 
 ## Week 4 — September 21–24
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 21 | | | | **Due:** HW 03 Lists, Data Types, Stack Machines · 11:59pm |
+| Mon Sep 21 | | | | **Due:** [HW 03: Lists, Datatypes, and a Stack Machine](assignments/hw03.md) · 11:59pm |
 | Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | 4.1 Syntax / Semantics | Lab 04: Eval ASTs | Released: HW 04 Little Languages (RegEx, Art) |
 | Thu Sep 24 | **Class 8** — 🟧 *Together* — Eval | 4.2 Eval / Interpretation | 📝 **Quiz 1** |  |
 
