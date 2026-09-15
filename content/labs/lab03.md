@@ -5,9 +5,17 @@ This lab is entirely a `ghci` session — no files to edit, just you, the interp
 !!! note "How you'll get set up"
     We're still finalizing the workflow for accessing the programming server for this course. Instructions will be posted here once they're ready — for now, this page covers what the lab actually asks you to do.
 
+!!! note "Gradescope"
+    As you work, complete the corresponding **Lab 03** assignment on Gradescope.
+
+    Most questions ask you to paste output or briefly explain what you observed.
+
 ## Getting Connected
 
 - [ ] I am able to get to the `ghci` prompt.
+
+!!! question "Gradescope check: ghci prompt"
+    Confirm this on Gradescope.
 
 ## Functions with Tuples
 
@@ -26,6 +34,9 @@ snd (snd (fst (((1,2),(3,4)),((5,6),(7,8)))))
 
 Then check it in `ghci` — did you predict correctly?
 
+!!! question "Gradescope: predicted vs. actual result"
+    Submit your prediction and the actual `ghci` output.
+
 **Swapping.** Define a function `swap` that accepts a pair and swaps the two positions:
 
 ```haskell
@@ -42,7 +53,7 @@ swap' (x, y) = (y, x)
 
 Try this one too.
 
-!!! question "Think about it"
+!!! question "Gradescope: swap vs. swap'"
     `swap` and `swap'` compute the same thing two different ways. What are your thoughts on the two implementations?
 
 **Rotating.** Write a function `leftRotate3` that behaves like this:
@@ -54,7 +65,7 @@ Prelude> leftRotate3 (1, 2, 3)
 
 That is: the element in position 1 moves to position 3, position 2 moves to position 1, and position 3 moves to position 2.
 
-!!! question "Try it"
+!!! question "Gradescope: leftRotate3"
     How would you implement `leftRotate3` in `ghci`?
 
 ## Stacks via Lists
@@ -82,7 +93,7 @@ isEmpty [] = True
 isEmpty (x:xs) = False
 ```
 
-!!! question "Think about it"
+!!! question "Gradescope: isEmpty"
     All three are correct but take different approaches. What are the merits or drawbacks of each?
 
 **`push`** takes an item `x :: a` and a stack `[a]`, and returns a new stack with `x` added to the top:
@@ -103,7 +114,7 @@ push x stack = x : stack
 push = (:)
 ```
 
-!!! question "Think about it"
+!!! question "Gradescope: push"
     Compare and contrast these two. What do you like or dislike about each? There's no correct answer — just looking for your honest reaction.
 
 **`pop`** takes a stack and returns both the popped item and the updated stack:
@@ -131,7 +142,7 @@ pop [] = error "cannot pop empty stack!"
 pop (x:xs) = (x, xs)
 ```
 
-!!! question "Think about it"
+!!! question "Gradescope: pop"
     Same question as above — compare and contrast. What do you like or dislike about each?
 
 ## Currying and Uncurrying
@@ -156,12 +167,12 @@ Call `g 4 5` and note the result. Then check the type of `curry` itself:
 :type curry
 ```
 
-!!! question "Think about it"
+!!! question "Gradescope: what curry does"
     In light of `f (4, 5)`, `g = curry f`, `g 4 5`, and `:type curry` — explain in your own words what `curry` does.
 
 One more: define `h = curry f 4`.
 
-!!! question "Try it"
+!!! question "Gradescope: predict h 5"
     Before running it, what do you expect `h 5` to evaluate to? Explain your reasoning, then check it.
 
 **Uncurrying.** Now go the other direction. Define `g` in `ghci`:
@@ -182,9 +193,14 @@ Call `f (4, 5)` and note the result, then check the type of `uncurry`:
 :type uncurry
 ```
 
-!!! question "Think about it"
+!!! question "Gradescope: what uncurry does"
     In light of `g 4 5`, `f = uncurry g`, `f (4, 5)`, and `:type uncurry` — explain in your own words what `uncurry` does.
 
 ## Where This Leaves Us
 
-Currying is one of those ideas that clicks into place once you've played with it directly rather than just read the definition — the fact that `f (x, y)` and `g x y` are two shapes for "the same" function, convertible in either direction, comes up again and again in functional programming. Next up: [HW 3](../assignments/hw03.md), which builds on tuples, datatypes, and this kind of function manipulation.
+Currying is one of those ideas that clicks into place once you've played with it directly rather than just read the definition — the fact that `f (x, y)` and `g x y` are two shapes for "the same" function, convertible in either direction, comes up again and again in functional programming.
+
+!!! question "Gradescope: wrap-up"
+    Leave any comments about the lab in the final Gradescope question, then move on to HW 3.
+
+Next up: [HW 3](../assignments/hw03.md), which builds on tuples, datatypes, and this kind of function manipulation.
