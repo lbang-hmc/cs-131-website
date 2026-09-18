@@ -41,8 +41,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - toc:
       permalink: true
+
+extra_javascript:
+  - javascripts/checklist-persist.js
 
 # Pages hidden for early semester (kept as source/HTML, just not linked).
 # Remove entries here and restore them to `nav` above as they go live.
