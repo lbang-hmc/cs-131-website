@@ -40,14 +40,14 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 21 | | | | **Due:** [HW 03: Lists, Datatypes, and a Stack Machine](assignments/hw03.md) · 11:59pm |
-| Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | [4.1 Syntax / Semantics](modules/04.1-code-as-data-evaluating-expressions.md) | [Lab 04: Boolean Expressions](labs/lab04.md) | Released: HW 04 Little Languages (RegEx, Art) |
+| Tue Sep 22 | **Class 7** — 🟧 *Together* — Syntax / Semantics | [4.1 Syntax / Semantics](modules/04.1-code-as-data-evaluating-expressions.md) | [Lab 04: Boolean Expressions](labs/lab04.md) | Released: [HW 04: Little Languages (Random Art and Regular Expressions)](assignments/hw04.md) |
 | Thu Sep 24 | **Class 8** — 🟧 *Together* — Eval | [4.2 Eval / Interpretation](modules/04.2-representing-functions.md) | 📝 **Quiz 1** |  |
 
 ## Week 5 — Sep 28 – Oct 1
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Sep 28 | | | | **Due:** HW 04 Little Languages (RegEx, Art) · 11:59pm |
+| Mon Sep 28 | | | | **Due:** [HW 04: Little Languages (Random Art and Regular Expressions)](assignments/hw04.md) · 11:59pm |
 | Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | 5.1 Scope | Lab 05: PicPlot | Released: HW 05 Simple PicPlot Compiling |
 | Thu Oct 1 | **Class 10** — 🟪 *Flexible* — Eval / Closures | 5.2 Environments? Closures? |  |  |
 

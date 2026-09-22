@@ -52,7 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /assignments/hw04.md
 
 nav:
   - Home: index.md
@@ -71,6 +70,8 @@ nav:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md
       - "HW 2: FUNctional Programming": assignments/hw02.md
+      - "HW 3: Lists, Datatypes, and a Stack Machine": assignments/hw03.md
+      - "HW 4: Little Languages (Random Art and Regular Expressions)": assignments/hw04.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
