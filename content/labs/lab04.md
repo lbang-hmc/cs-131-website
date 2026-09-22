@@ -10,7 +10,15 @@ In this lab, you'll work with a small algebraic datatype, `BoolExpr`, that repre
 - Build more comfort with functional-programming style generally.
 
 !!! note "How you'll get the starter code"
-    We're still finalizing the workflow for distributing starter code for this course. This lab was originally distributed as a small public repository containing the `BoolExpr` datatype and partial `eval`/`prettyPrint` implementations for you to complete — that setup will be posted here once it's ready. For now, this page covers what the lab asks of you.
+    The starter code is a small public repository, [`hmc-cs-131-fa-2026/lab4`](https://github.com/hmc-cs-131-fa-2026/lab4), containing the `BoolExpr` datatype and partial `eval`/`prettyPrint` implementations for you to complete. On the course server, clone it directly — no need to make your own copy first:
+
+    ```bash
+    cd cs131
+    git clone https://github.com/hmc-cs-131-fa-2026/lab4.git
+    cd lab4
+    ```
+
+    See [Connecting to the Server with VS Code](../how-to/connecting-with-vscode.md) if you haven't gotten to a terminal on the server yet.
 
 !!! note "Gradescope"
     As you work, complete the corresponding **Lab 04** assignment on Gradescope.
@@ -36,10 +44,10 @@ expr1 :: BoolExpr
 expr1 = Or (And T F) (Not F)
 ```
 
-Now define `expr2` and `expr3` yourself:
+Now define `expr2` and `expr3` yourself. `expr2` should represent `~ (T & F) | (T -> F)`:
 
 ```haskell
--- TODO: Define expr2 as per instructions
+-- expr2 should represent ~ (T & F) | (T -> F)
 expr2 :: BoolExpr
 expr2 = undefined
 ```
