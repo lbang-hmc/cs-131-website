@@ -129,7 +129,7 @@ str3 = prettyPrint expr3
 
 ## Where This Leaves Us
 
-`eval` and `prettyPrint` are both doing the same thing structurally — walking a `BoolExpr` tree and producing something different at each case — which is the core pattern behind interpreters and formatters alike, and one you'll meet again in Module 04.1 and 04.2.
+`eval` and `prettyPrint` are both doing the same thing structurally — walking a `BoolExpr` tree and producing something different at each case — the same evaluator/pretty-printer pattern from Module 04.1 and 04.2, now applied to booleans instead of arithmetic. HW 4 asks you to build this same pattern again, for two little languages of your own.
 
 !!! question "Gradescope: wrap-up"
     Leave any optional comments about the lab in the final Gradescope question, then move on to HW 4.
