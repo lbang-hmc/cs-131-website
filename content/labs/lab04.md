@@ -12,7 +12,15 @@ In this lab, you'll work with a small algebraic datatype, `BoolExpr`, that repre
 !!! note "How you'll get the starter code"
     We're still finalizing the workflow for distributing starter code for this course. This lab was originally distributed as a small public repository containing the `BoolExpr` datatype and partial `eval`/`prettyPrint` implementations for you to complete — that setup will be posted here once it's ready. For now, this page covers what the lab asks of you.
 
+!!! note "Gradescope"
+    As you work, complete the corresponding **Lab 04** assignment on Gradescope.
+
+    Most questions ask you to submit an expression, an implementation, or a predicted/actual result.
+
 - [ ] I was able to get the starter code set up.
+
+!!! question "Gradescope check: starter code"
+    Confirm this on Gradescope.
 
 ## Expressions
 
@@ -42,6 +50,9 @@ expr3 :: BoolExpr
 expr3 = undefined
 ```
 
+!!! question "Gradescope: expr2 and expr3"
+    Submit your definitions of `expr2` and `expr3`.
+
 ## Completing the `eval` Function
 
 The starter code gives you `eval` for literals and `And`; fill in `Or`, `Not`, and `Implies`:
@@ -58,6 +69,9 @@ eval (Not a) = undefined
 eval (Implies a b) = undefined
 ```
 
+!!! question "Gradescope: eval for Or, Not, Implies"
+    Submit your implementations of `eval` for `Or`, `Not`, and `Implies`.
+
 ## Testing the `eval` Function
 
 Make sure these all evaluate to what you expect:
@@ -70,8 +84,8 @@ val2 = eval expr2
 val3 = eval expr3
 ```
 
-!!! question "Try it"
-    What do you predict `val0` through `val3` should be, given how you defined `expr2` and `expr3`? Check your predictions in `ghci`.
+!!! question "Gradescope: eval results"
+    What do you predict `val0` through `val3` should be, given how you defined `expr2` and `expr3`? Check your predictions in `ghci`, then submit each result.
 
 ## Implementing Pretty Printing
 
@@ -89,6 +103,9 @@ prettyPrint (Not a) = undefined
 prettyPrint (Implies a b) = undefined
 ```
 
+!!! question "Gradescope: prettyPrint for Or, Not, Implies"
+    Submit your implementations of `prettyPrint` for `Or`, `Not`, and `Implies`.
+
 ## Testing the `prettyPrint` Function
 
 ```haskell
@@ -99,9 +116,14 @@ str2 = prettyPrint expr2
 str3 = prettyPrint expr3
 ```
 
-!!! question "Try it"
-    What string do you expect `str0` through `str3` to produce? Check your predictions in `ghci`.
+!!! question "Gradescope: prettyPrint results"
+    What string do you expect `str0` through `str3` to produce? Check your predictions in `ghci`, then submit each result.
 
 ## Where This Leaves Us
 
-`eval` and `prettyPrint` are both doing the same thing structurally — walking a `BoolExpr` tree and producing something different at each case — which is the core pattern behind interpreters and formatters alike, and one you'll meet again in Module 04.1 and 04.2. Next up: [HW 4](../assignments/hw04.md).
+`eval` and `prettyPrint` are both doing the same thing structurally — walking a `BoolExpr` tree and producing something different at each case — which is the core pattern behind interpreters and formatters alike, and one you'll meet again in Module 04.1 and 04.2.
+
+!!! question "Gradescope: wrap-up"
+    Leave any optional comments about the lab in the final Gradescope question, then move on to HW 4.
+
+Next up: [HW 4](../assignments/hw04.md).

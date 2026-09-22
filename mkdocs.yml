@@ -52,7 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /labs/lab04.md
   /assignments/hw04.md
 
 nav:
