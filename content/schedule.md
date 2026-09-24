@@ -48,7 +48,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 28 | | | | **Due:** [HW 04: Little Languages (Random Art and Regular Expressions)](assignments/hw04.md) · 11:59pm |
-| Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | 5.1 Scope | Lab 05: PicPlot | Released: HW 05 Simple PicPlot Compiling |
+| Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | [5.1 Scope](modules/05.1-environments-scope-closures.md) | Lab 05: PicPlot | Released: HW 05 Simple PicPlot Compiling |
 | Thu Oct 1 | **Class 10** — 🟪 *Flexible* — Eval / Closures | 5.2 Environments? Closures? |  |  |
 
 ## Week 6 — October 5–8

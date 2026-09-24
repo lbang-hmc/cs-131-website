@@ -67,6 +67,7 @@ nav:
       - "03.2: Haskell Data Types, Pattern Matching, and Type Classes": modules/03.2-haskell-data-types-pattern-matching-and-type-classes.md
       - "04.1: Code as Data, Evaluating Expressions": modules/04.1-code-as-data-evaluating-expressions.md
       - "04.2: Representing Functions": modules/04.2-representing-functions.md
+      - "05.1: Environments, Scope, and Closures": modules/05.1-environments-scope-closures.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md

@@ -9,6 +9,7 @@ An overview of course modules will be posted here as they're published. To start
 - [**03.2: Haskell Data Types, Pattern Matching, and Type Classes**](03.2-haskell-data-types-pattern-matching-and-type-classes.md) — defining your own data with `data`, constructors as functions, recursive types and the functions that mirror them, and what `deriving (Show, Eq, Ord)` actually means.
 - [**04.1: Code as Data, Evaluating Expressions**](04.1-code-as-data-evaluating-expressions.md) — expressions vs. statements, syntax vs. semantics, concrete vs. abstract syntax, and representing and evaluating arithmetic expressions as recursive Haskell data.
 - [**04.2: Representing Functions**](04.2-representing-functions.md) — representing function definitions and applications as data, explaining application via substitution, call-by-name vs. call-by-value, and currying inside the interpreter.
+- [**05.1: Environments, Scope, and Closures**](05.1-environments-scope-closures.md) — replacing substitution with an environment of bindings, adding `let` as syntactic sugar for function application, dynamic vs. static scope, and closures as a function paired with its defining environment.
 
 !!! note "Coming soon"
     The rest of the module list will be posted here as the semester develops.
