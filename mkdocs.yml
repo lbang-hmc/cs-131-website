@@ -77,6 +77,9 @@ nav:
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
+      - "Lab 3: Tuples, Stacks, and Currying": labs/lab03.md
+      - "Lab 4: Boolean Expressions": labs/lab04.md
+      - "Lab 5: Two Ways to Draw: Plotter Python and piq": labs/lab05.md
   - FAQ: faq.md
   - How-To Guides:
       - how-to/index.md

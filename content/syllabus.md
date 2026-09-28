@@ -271,16 +271,16 @@ If you are ever unsure whether a particular use is allowed, ask before using it.
 
 ### Grade Breakdown
 
-Your course grade is based on **2,990 points** across 52 submissions, in five categories:
+Your course grade is based on **2,970 points** across 51 submissions, in five categories:
 
 | Category | Count | Point value | Total points | Approx. share of grade |
 |----------|:-----:|:-----------:|:------------:|:----------------------:|
-| Homework | 12 | 100 each | 1,200 | 40.1% |
-| Module completions | 22 | 20 each | 440 | 14.7% |
-| Regular labs | 12 | 50 each | 600 | 20.1% |
-| Discussion labs | 2 | 75 each | 150 | 5.0% |
-| Quizzes | 4 | 150 each | 600 | 20.1% |
-| **Total** | **52** | — | **2,990** | **100%** |
+| Homework | 12 | 100 each | 1,200 | 40.4% |
+| Module completions | 21 | 20 each | 420 | 14.1% |
+| Regular labs | 12 | 50 each | 600 | 20.2% |
+| Discussion labs | 2 | 75 each | 150 | 5.1% |
+| Quizzes | 4 | 150 each | 600 | 20.2% |
+| **Total** | **51** | — | **2,970** | **100%** |
 
 The itemized point values for each category are below.
 
@@ -301,7 +301,7 @@ The itemized point values for each category are below.
     | HW 12: peoPLe | 100 |
     | **Homework total** | **1,200** |
 
-??? abstract "Module completions — 440 points"
+??? abstract "Module completions — 420 points"
     | Module | Points |
     |--------|:------:|
     | Module 1.1: Intro / What is CS 131? | 20 |
@@ -312,7 +312,6 @@ The itemized point values for each category are below.
     | Module 4.1: Syntax / Semantics | 20 |
     | Module 4.2: Eval / Interpretation | 20 |
     | Module 5.1: Scope | 20 |
-    | Module 5.2: Environments / Closures | 20 |
     | Module 6.1: Parsing | 20 |
     | Module 6.2: Parser Combinators | 20 |
     | Module 7.1: Functors | 20 |
@@ -326,7 +325,7 @@ The itemized point values for each category are below.
     | Module 12.1: Types | 20 |
     | Module 12.2: Types | 20 |
     | Module 14.1: peoPLe | 20 |
-    | **Module total** | **440** |
+    | **Module total** | **420** |
 
 ??? abstract "Labs — 750 points"
     | Lab | Points |
