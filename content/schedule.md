@@ -48,14 +48,14 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Sep 28 | | | | **Due:** [HW 04: Little Languages (Random Art and Regular Expressions)](assignments/hw04.md) · 11:59pm |
-| Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | [5.1 Scope](modules/05.1-environments-scope-closures.md) | [Lab 05: PicPlot](labs/lab05.md) | Released: HW 05 Simple PicPlot Compiling |
+| Tue Sep 29 | **Class 9** — 🟧 *Together* — Eval / Compiling | [5.1 Scope](modules/05.1-environments-scope-closures.md) | [Lab 05: PicPlot](labs/lab05.md) | Released: [HW 05 Simple PicPlot Compiling](assignments/hw05.md) |
 | Thu Oct 1 | **Class 10** — 🟪 *Flexible* — Eval / Closures |  |  |  |
 
 ## Week 6 — October 5–8
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Oct 5 | | | | **Due:** HW 05 Simple PicPlot Part 1: Compiling · 11:59pm |
+| Mon Oct 5 | | | | **Due:** [HW 05 Simple PicPlot Part 1: Compiling](assignments/hw05.md) · 11:59pm |
 | Tue Oct 6 | **Class 11** — 🟧 *Together* — Parsing | 6.1 Parsing | Lab 06: Parsing | Released: HW 06 PicPlot Parsing |
 | Thu Oct 8 | **Class 12** — 🟪 *Flexible* — Parsing | 6.2 Parser Combinators |  |  |
 

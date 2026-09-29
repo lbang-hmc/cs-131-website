@@ -74,6 +74,7 @@ nav:
       - "HW 2: FUNctional Programming": assignments/hw02.md
       - "HW 3: Lists, Datatypes, and a Stack Machine": assignments/hw03.md
       - "HW 4: Little Languages (Random Art and Regular Expressions)": assignments/hw04.md
+      - "HW 5: PicPlot Part 1: Compiling": assignments/hw05.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
