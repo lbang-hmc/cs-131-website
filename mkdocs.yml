@@ -89,3 +89,4 @@ nav:
       - "Writing and Running Tests": how-to/writing-and-running-tests.md
       - "The Homework Workflow": how-to/homework-workflow.md
       - "Parser Combinator Reference": how-to/parser-combinators.md
+      - "ParserBase Reference": how-to/parser-base.md

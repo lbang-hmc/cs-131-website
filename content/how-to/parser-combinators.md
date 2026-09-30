@@ -1,6 +1,6 @@
 # Parser Combinator Reference
 
-Starting in Module 6, you'll write parsers by gluing together small parsers with **parser combinators**. The course's combinator library lives in two files that ship with every parsing lab and assignment: `ParserBase.hs`, which holds the core machinery, and `ParserCombinators.hs`, which builds a toolkit on top of it. You'll only ever need one line to use the library:
+Starting in Module 6, you'll write parsers by gluing together small parsers with **parser combinators**. The course's combinator library lives in two files that ship with every parsing lab and assignment: `ParserBase.hs`, which holds the core machinery, and `ParserCombinators.hs`, which builds a toolkit on top of it. You'll only ever need one line to use the library (the [ParserBase Reference](parser-base.md) covers the engine underneath, if you're curious):
 
 ```haskell
 import ParserCombinators
@@ -9,7 +9,7 @@ import ParserCombinators
 This page covers everything that import gives you, grouped by what you'd use it for. Keep it open while you work. You don't need to memorize it, and you **don't need to understand how the library is implemented**: several definitions are written in a terse, library-heavy style that doesn't look like what we write in class.
 
 !!! note "Credit"
-    The `ParserCombinators` library and its original documentation were written by the HMC CS 131 staff (Melissa O'Neill, Chris Stone, and Ben Wiedermann). This page is adapted from that documentation.
+    The `ParserCombinators` library and its original documentation were written by the HMC CS 131 staff (Melissa O'Neill, Chris Stone, Ben Wiedermann, and Lucas Bang). This page is adapted from that documentation.
 
 ## Reading the Types
 

@@ -7,6 +7,7 @@ Guides for tools and workflows used in this course. To start:
 - [**Writing and Running Tests**](writing-and-running-tests.md) — the commands you'll run to check your work, plus how Haskell modules, Hspec, and QuickCheck fit together if you want to write your own tests.
 - [**The Homework Workflow**](homework-workflow.md) — the end-to-end process for every assignment: making your own private copy of the starter repo, cloning it to the server, and submitting on Gradescope.
 - [**Parser Combinator Reference**](parser-combinators.md) — everything `import ParserCombinators` gives you for the parsing modules and assignments, grouped by task, with a working example for each.
+- [**ParserBase Reference**](parser-base.md) — the engine underneath the parser library: the few extras you need `import ParserBase` for, and how parsers and their error messages work under the hood.
 
 !!! note "Coming soon"
     More guides will be posted here as the semester develops.
