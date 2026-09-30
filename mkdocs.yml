@@ -88,3 +88,4 @@ nav:
       - "Text Editors on the Server": how-to/text-editors-on-the-server.md
       - "Writing and Running Tests": how-to/writing-and-running-tests.md
       - "The Homework Workflow": how-to/homework-workflow.md
+      - "Parser Combinator Reference": how-to/parser-combinators.md
