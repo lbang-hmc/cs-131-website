@@ -49,6 +49,9 @@ This page always gives the "think of it as" version with `Parser` filled in.
 | Give better error messages | `<??>`, `<???>` |
 | Always succeed or always fail | `return`, `pfail`, `fail` |
 
+!!! note "How do you even say `<-+->` out loud?"
+    This library is mostly punctuation: `<+->`, `<??>`, `>>=:`, `<=>`... Most of us type characters like these all the time without ever learning what to call them, which makes pair programming (or asking a question in office hours) surprisingly awkward. Is `<` "less than," "left angle bracket," or something else entirely? Programmers settled the matter long ago, in verse: read [Waka Waka Bang Splat](https://spot.colorado.edu/~sniderc/poetry/wakawaka.html). It only works if you read it aloud.
+
 All of the examples below are real `ghci` sessions. When a parse fails, `ghci` also prints a few lines of `CallStack` after the error; those are left out here.
 
 ## The `Parser` Type
