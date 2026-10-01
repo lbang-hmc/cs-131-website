@@ -56,8 +56,8 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Oct 5 | | | | **Due:** [HW 05 Simple PicPlot Part 1: Compiling](assignments/hw05.md) · 11:59pm |
-| Tue Oct 6 | **Class 11** — 🟧 *Together* — Parsing | 6.1 Parsing | Lab 06: Parsing | Released: HW 06 PicPlot Parsing |
-| Thu Oct 8 | **Class 12** — 🟪 *Flexible* — Parsing | 6.2 Parser Combinators |  |  |
+| Tue Oct 6 | **Class 11** — 🟧 *Together* — Parsing | [6.1 Parsing](modules/06.1-from-source-text-to-structure.md) | Lab 06: Parsing | Released: HW 06 PicPlot Parsing |
+| Thu Oct 8 | **Class 12** — 🟪 *Flexible* — Parsing | [6.2 Parser Combinators](modules/06.2-practical-parsing-with-parser-combinators.md) |  |  |
 
 ## Week 7 — October 12–15
 

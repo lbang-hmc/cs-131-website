@@ -10,6 +10,8 @@ An overview of course modules will be posted here as they're published. To start
 - [**04.1: Code as Data, Evaluating Expressions**](04.1-code-as-data-evaluating-expressions.md) — expressions vs. statements, syntax vs. semantics, concrete vs. abstract syntax, and representing and evaluating arithmetic expressions as recursive Haskell data.
 - [**04.2: Representing Functions**](04.2-representing-functions.md) — representing function definitions and applications as data, explaining application via substitution, call-by-name vs. call-by-value, and currying inside the interpreter.
 - [**05.1: Environments, Scope, and Closures**](05.1-environments-scope-closures.md) — replacing substitution with an environment of bindings, adding `let` as syntactic sugar for function application, dynamic vs. static scope, and closures as a function paired with its defining environment.
+- [**06.1: From Source Text to Structure**](06.1-from-source-text-to-structure.md) — parsing as the missing arrow from concrete syntax to abstract syntax, reading context-free grammars, tokens, and the difference between keywords and identifiers.
+- [**06.2: Practical Parsing with Parser Combinators**](06.2-practical-parsing-with-parser-combinators.md) — using the course's parser-combinator library to build parsers that mirror grammar rules directly, sequencing, alternatives, repetition, and constructing ASTs as you parse.
 
 !!! note "Coming soon"
     The rest of the module list will be posted here as the semester develops.
