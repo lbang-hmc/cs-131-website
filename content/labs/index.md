@@ -7,6 +7,7 @@ Labs are in-class, hands-on sessions — mostly working directly in `ghci`, with
 - [**Lab 3: Tuples, Stacks, and Currying**](lab03.md) — a `ghci` session on pairs, list-based stacks, and currying/uncurrying — mostly comparing multiple correct implementations of the same idea.
 - [**Lab 4: Boolean Expressions**](lab04.md) — completing `eval` and `prettyPrint` functions for a small boolean-expression datatype, the same evaluator/formatter pattern that shows up again in Module 04.1/04.2.
 - [**Lab 5: Two Ways to Draw: Plotter Python and piq**](lab05.md) — writing and comparing two levels of a pen-plotter drawing language: raw five-command plotter Python, and `piq`, a small language with loops and procedures that compiles down to it.
+- [**Lab 6: A First Look at Parsing piq**](lab06.md) — practicing the course's parser combinator library directly in `ghci`, then writing a small, deliberately restricted slice of real `piq` parsing before HW6 asks for the whole grammar.
 
 !!! note "Coming soon"
     Labs will be posted here as the semester develops. Each one will be linked from the [schedule](../schedule.md) on the day it runs.

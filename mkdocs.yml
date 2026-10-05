@@ -77,12 +77,14 @@ nav:
       - "HW 3: Lists, Datatypes, and a Stack Machine": assignments/hw03.md
       - "HW 4: Little Languages (Random Art and Regular Expressions)": assignments/hw04.md
       - "HW 5: PicPlot Part 1: Compiling": assignments/hw05.md
+      - "HW 5: Environment Walkthroughs": assignments/hw05-env-walkthroughs.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
       - "Lab 3: Tuples, Stacks, and Currying": labs/lab03.md
       - "Lab 4: Boolean Expressions": labs/lab04.md
       - "Lab 5: Two Ways to Draw: Plotter Python and piq": labs/lab05.md
+      - "Lab 6: A First Look at Parsing piq": labs/lab06.md
   - FAQ: faq.md
   - How-To Guides:
       - how-to/index.md

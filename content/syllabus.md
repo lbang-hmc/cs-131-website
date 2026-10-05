@@ -317,13 +317,13 @@ The itemized point values for each category are below.
     | Module 7.1: Functors | 20 |
     | Module 7.2: Monads | 20 |
     | Module 8.1: Lambda Calculus | 20 |
-    | Module 9.1: Lambda Calculus | 20 |
-    | Module 9.2: Lambda Calculus | 20 |
-    | Module 10.1: LC → Raskell | 20 |
-    | Module 10.2: LC → Raskell | 20 |
-    | Module 11.1: Types | 20 |
-    | Module 12.1: Types | 20 |
-    | Module 12.2: Types | 20 |
+    | Module 8.2: Lambda Calculus | 20 |
+    | Module 8.3: Lambda Calculus | 20 |
+    | Module 9.1: LC → Raskell | 20 |
+    | Module 9.2: LC → Raskell | 20 |
+    | Module 10.1: Types | 20 |
+    | Module 10.2: Types | 20 |
+    | Module 10.3: Types | 20 |
     | Module 14.1: peoPLe | 20 |
     | **Module total** | **420** |
 
