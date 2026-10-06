@@ -32,7 +32,7 @@ This lab is about the course's **parser combinator library** — the same one HW
 - [ ] I was able to clone the repo and load `PiqWarmup.hs` in `ghci` with no errors.
 
 !!! question "Gradescope check: starter code"
-    Confirm this on Gradescope.
+    Confirm this directly on Gradescope — there's no `answers.md` entry for this one.
 
 For the full writeup of every combinator mentioned below, see the [Parser Combinator Reference](../how-to/parser-combinators.md) — this lab exercises exactly what's documented there, nothing more.
 
@@ -60,7 +60,7 @@ parse (many digit) "42"
 Some of these produce an error — that's expected. Explain why.
 
 !!! question "Gradescope: parsing digits"
-    What happened for each of the four commands above? Based on them, what do `digit` and `many` do?
+    What happened for each of the four commands above? Based on them, what do `digit` and `many` do? Write your answer under **1.1 Parsing a single digit** in `answers.md`.
 
 ### 1.2 `many` vs. `some`
 
@@ -75,7 +75,7 @@ parse (some digit) ""
 ```
 
 !!! question "Gradescope: many vs. some"
-    Based on these results, what's the difference between `many` and `some`?
+    Based on these results, what's the difference between `many` and `some`? Write your answer under **1.2 many vs. some** in `answers.md`.
 
 ### 1.3 Building Your Own Parser
 
@@ -95,7 +95,7 @@ parse digits "4279"
 ```
 
 !!! question "Gradescope: the digits parser"
-    What happened for each of the four inputs?
+    What happened for each of the four inputs? Write your answer under **1.3 Building `digits = some digit`** in `answers.md`.
 
 ### 1.4 More Parsers Already in the Library
 
@@ -112,6 +112,8 @@ parse digits "4279"
     parse (char 'x') "x"
     parse (char 'x') "y"
     ```
+
+    Write your answer under **1.4 More simple parsers** in `answers.md`.
 
 ### 1.5 Combining Parsers: `<|>`, `<+>`, `<+->`
 
@@ -130,7 +132,7 @@ parse alphanum "$"
 ```
 
 !!! question "Gradescope: the <|> combinator"
-    Based on these results, what does `<|>` do?
+    Based on these results, what does `<|>` do? Write your answer under **1.5 Combining parsers: `<|>`, `<+>`, `<+->`** in `answers.md` (the "What `<|>` does" line).
 
 Now `<+>`:
 
@@ -147,7 +149,7 @@ parse (many digit <+> space <+> many letter <+> space <+> many letter) "10 hello
 ```
 
 !!! question "Gradescope: the <+> combinator"
-    What does `<+>` accomplish? Based on the last result above, is `<+>` left- or right-associative?
+    What does `<+>` accomplish? Based on the last result above, is `<+>` left- or right-associative? Write your answer under **1.5 Combining parsers: `<|>`, `<+>`, `<+->`** in `answers.md` (the "What `<+>` does, and its associativity" line).
 
 And `<+->`:
 
@@ -157,7 +159,7 @@ parse (many digit <+-> space <+> many letter <+-> (space <+> many letter)) "10 h
 ```
 
 !!! question "Gradescope: the <+-> combinator"
-    What does `<+->` change about the result? Why do those last two commands give different results, even though they look almost identical?
+    What does `<+->` change about the result? Why do those last two commands give different results, even though they look almost identical? Write your answer under **1.5 Combining parsers: `<|>`, `<+>`, `<+->`** in `answers.md` (the "What `<+->` changes about the previous result" line).
 
 ### 1.6 Transforming Results with `>>:`
 
@@ -173,7 +175,7 @@ parse (letter >>: "a letter") "x"
 
     Then define `letter_then_digit` so that `parse letter_then_digit "x1"` gives `("a letter","a digit")`.
 
-    Submit both definitions.
+    Submit both definitions. Write your answers under **1.6 `>>:`** in `answers.md`.
 
 ### 1.7 Transforming Results with `>>=:`
 
@@ -188,7 +190,7 @@ parse (some letter >>=: reverse) "hello"
 
     Then, using an anonymous function, write a parser expression so that `parse (some letter >>=: YOUR_FUNCTION) "hello"` gives `"hello!"`.
 
-    Submit both.
+    Submit both. Write your answers under **1.7 `>>=:`** in `answers.md`.
 
 ---
 
@@ -217,7 +219,7 @@ parse (wholeWord "dot") "dotty"
 ```
 
 !!! question "Gradescope: text vs. wholeWord"
-    In your own words, why doesn't the `textDot "dotty"` exception mean `textDot` noticed the real problem? How is `wholeWord`'s failure different?
+    In your own words, why doesn't the `textDot "dotty"` exception mean `textDot` noticed the real problem? How is `wholeWord`'s failure different? Write your answer under **2.1 Why `text "dot"` isn't enough** in `answers.md`.
 
 ### 2.2 Finishing `direction`
 
@@ -240,7 +242,7 @@ parse direction ""
 ```
 
 !!! question "Gradescope: finishing direction"
-    Submit your finished `direction`. What happened for the three bad inputs? Read the actual error messages — don't just say "it failed."
+    Submit your finished `direction`. What happened for the three bad inputs? Read the actual error messages — don't just say "it failed." Write your answer under **2.2 Finishing `direction`** in `answers.md`.
 
 ### 2.3 Diagnosing `squareWrong`
 
@@ -252,7 +254,7 @@ parse squareWrong "squareness 10"
 ```
 
 !!! question "Gradescope: diagnosing squareWrong"
-    What's actually wrong with `squareWrong`? Why is the error message for the second command misleading about where the real bug is? (Compare it to what you saw in 2.1.)
+    What's actually wrong with `squareWrong`? Why is the error message for the second command misleading about where the real bug is? (Compare it to what you saw in 2.1.) Write your answer under **2.3 Diagnosing `squareWrong`** in `answers.md`.
 
 ### 2.4 Finishing `miniStmt`
 
@@ -268,7 +270,7 @@ parse miniStmt "squareness 10"
 ```
 
 !!! question "Gradescope: finishing miniStmt"
-    Submit your finished `miniStmt`. Confirm that the last line now correctly fails — unlike `squareWrong`.
+    Submit your finished `miniStmt`. Confirm that the last line now correctly fails — unlike `squareWrong`. Write your answer under **2.4 Finishing `miniStmt`** in `answers.md`.
 
 ### 2.5 Trying It on Files
 
@@ -285,7 +287,7 @@ parseMiniStmtsFile "snippets/bad3-not-a-keyword.piqmini"
 Two should succeed. Three should fail, each for a different reason.
 
 !!! question "Gradescope: trying it on files"
-    What did the two successful files produce? Give a one-sentence explanation for each of the three that failed.
+    What did the two successful files produce? Give a one-sentence explanation for each of the three that failed. Write your answer under **2.5 Trying it on files** in `answers.md`.
 
 ---
 
@@ -298,6 +300,8 @@ Two should succeed. Three should fail, each for a different reason.
     2. What's one thing you'll watch out for when you start HW6, because of something you saw in this lab?
     3. Anything else — thoughts on this lab format, or questions you still have?
 
+    Write your answer under **Reflection** in `answers.md`.
+
 ---
 
 ## Where This Leaves Us
@@ -305,4 +309,4 @@ Two should succeed. Three should fail, each for a different reason.
 Today you wrote exactly two things: the rest of `direction`, and `dot`/`square`/`circle` with a plain number. That's it. Everything else — full expressions, assignments, loops, procedures, and whole programs — is still ahead of you. HW6 asks you to build the real thing, with the real grammar from top to bottom, starting from a stub even sparser than today's. The techniques are the same ones you just practiced: build small parsers, combine them with `<|>`/`<+>`/`<+->`, shape their results with `>>:`/`>>=:`, and read the error message carefully before trusting where it says the problem is.
 
 !!! question "Gradescope: wrap-up"
-    Leave any optional comments about the lab in the final Gradescope question, then move on to HW6.
+    Leave any optional comments about the lab directly in this Gradescope question (no `answers.md` entry for this one), then move on to HW6.
