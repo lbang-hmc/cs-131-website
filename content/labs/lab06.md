@@ -25,7 +25,7 @@ This lab is about the course's **parser combinator library** — the same one HW
     See [Connecting to the Server with VS Code](../how-to/connecting-with-vscode.md) if you haven't gotten to a terminal on the server yet.
 
 !!! note "Gradescope"
-    As you work, keep notes in `answers.md` — its headings match the Gradescope questions below. When you're done, paste your answers into the **Lab 06** assignment on Gradescope and upload `PiqWarmup.hs` where asked.
+    As you work, keep notes in `answers.md` — its headings match the Gradescope questions below. When you're done, upload your completed `answers.md` (and `PiqWarmup.hs` where asked) to the **Lab 06** assignment on Gradescope.
 
     Boxes labeled **Gradescope question** need a submitted answer. Boxes labeled **Try it** don't — they're there so you actually run the command, not just read it.
 
