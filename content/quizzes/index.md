@@ -12,5 +12,13 @@ To help you prepare, here's a set of practice problems covering the same materia
 
 - [**Quiz 1 Practice Problems (PDF)**](files/cs131_quiz1_practice.pdf)
 
+## Quiz 2 — Oct 15
+
+Quiz 2 covers Modules 4–5: abstract syntax, evaluation, substitution, evaluation strategies, environments, scope, and closures, plus a little conceptual parsing from Module 6.
+
+To help you prepare, here's a set of practice problems covering the same material (ungraded, optional, solutions not included):
+
+- [**Quiz 2 Practice Problems (PDF)**](files/cs131_quiz2_practice.pdf)
+
 !!! note "More quizzes coming soon"
-    Practice problems for Quizzes 2–4 will be posted here as the semester develops.
+    Practice problems for Quizzes 3–4 will be posted here as the semester develops.

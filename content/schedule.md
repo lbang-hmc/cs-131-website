@@ -65,7 +65,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Oct 12 | | | | **Due:** [HW 05 Simple PicPlot Part 1: Compiling](assignments/hw05.md) · 11:59pm |
 | Tue Oct 13 | **Class 13** — 🟧 *Together* — piq2plot Check In |  |  |  |
-| Thu Oct 15 | **Class 14** — 🟧 *Together* — Quiz 2 |  | 📝 **Quiz 2** |  |
+| Thu Oct 15 | **Class 14** — 🟧 *Together* — Quiz 2 |  | 📝 **[Quiz 2](quizzes/index.md)** |  |
 
 ## Week 8 — October 19–22
 
