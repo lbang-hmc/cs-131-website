@@ -56,7 +56,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Oct 5 | | | | |
-| Tue Oct 6 | **Class 11** — 🟧 *Together* — Parsing (covered by a TA while the instructor is traveling) | [6.1 Parsing](modules/06.1-from-source-text-to-structure.md) | [Lab 06: A First Look at Parsing piq](labs/lab06.md) | Released: HW 06 PicPlot Parsing |
+| Tue Oct 6 | **Class 11** — 🟧 *Together* — Parsing (covered by a TA while the instructor is traveling) | [6.1 Parsing](modules/06.1-from-source-text-to-structure.md) | [Lab 06: A First Look at Parsing piq](labs/lab06.md) | Released: [HW 06 PicPlot Parsing](assignments/hw06.md) |
 | Thu Oct 8 | **Class 12** — 🟪 *Flexible* — Parsing (covered by a TA while the instructor is traveling) | [6.2 Parser Combinators](modules/06.2-practical-parsing-with-parser-combinators.md) |  |  |
 
 ## Week 7 — October 12–15
@@ -73,7 +73,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Oct 19 | 🎉 *Fall Break — no class* | | | |
 | Tue Oct 20 | 🎉 *Fall Break — no class* | | | |
-| Wed Oct 21 | | 7.1 Functors |  | **Due:** HW 06 PicPlot Part 2: Parsing · 11:59pm |
+| Wed Oct 21 | | 7.1 Functors |  | **Due:** [HW 06 PicPlot Part 2: Parsing](assignments/hw06.md) · 11:59pm |
 | Thu Oct 22 | **Class 15** — 🟧 *Together* — Functors / Monads | 7.2 Monads | Lab 07: Monads | Released: HW 07 Monadic Eval |
 
 ## Week 9 — October 26–29

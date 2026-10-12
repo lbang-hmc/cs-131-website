@@ -1,6 +1,6 @@
 # Lab 6: A First Look at Parsing piq
 
-This lab is about the course's **parser combinator library** — the same one HW6 asks you to build a real `piq` parser with. Today you'll run the library's pieces directly in `ghci`, combine them yourself, and then write a *small, deliberately restricted* slice of real `piq` parsing: just `direction`, and just `dot`/`square`/`circle` with a plain number, not a full expression. You'll also run a couple of **broken** parsers on purpose, so you're comfortable reading parser error messages before HW6 hands you the whole grammar.
+This lab is about the course's **parser combinator library** — the same one [HW6](../assignments/hw06.md) asks you to build a real `piq` parser with. Today you'll run the library's pieces directly in `ghci`, combine them yourself, and then write a *small, deliberately restricted* slice of real `piq` parsing: just `direction`, and just `dot`/`square`/`circle` with a plain number, not a full expression. You'll also run a couple of **broken** parsers on purpose, so you're comfortable reading parser error messages before HW6 hands you the whole grammar.
 
 **This is not a preview of the HW6 solution.** The file you edit today, `PiqWarmup.hs`, is a different, smaller file than HW6's `PiqParser.hs`, and the functions you write here (`wholeWord`, `miniStmt`) aren't the ones you'll write there (`keyword`, `stmt`). The *technique* carries over; the code doesn't.
 
@@ -309,4 +309,4 @@ Two should succeed. Three should fail, each for a different reason.
 Today you wrote exactly two things: the rest of `direction`, and `dot`/`square`/`circle` with a plain number. That's it. Everything else — full expressions, assignments, loops, procedures, and whole programs — is still ahead of you. HW6 asks you to build the real thing, with the real grammar from top to bottom, starting from a stub even sparser than today's. The techniques are the same ones you just practiced: build small parsers, combine them with `<|>`/`<+>`/`<+->`, shape their results with `>>:`/`>>=:`, and read the error message carefully before trusting where it says the problem is.
 
 !!! question "Gradescope: wrap-up"
-    Leave any optional comments about the lab directly in this Gradescope question (no `answers.md` entry for this one), then move on to HW6.
+    Leave any optional comments about the lab directly in this Gradescope question (no `answers.md` entry for this one), then move on to [HW6](../assignments/hw06.md).
