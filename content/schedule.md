@@ -73,8 +73,8 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Oct 19 | 🎉 *Fall Break — no class* | | | |
 | Tue Oct 20 | 🎉 *Fall Break — no class* | | | |
-| Wed Oct 21 | | 7.1 Functors |  | **Due:** [HW 06 PicPlot Part 2: Parsing](assignments/hw06.md) · 11:59pm |
-| Thu Oct 22 | **Class 15** — 🟧 *Together* — Functors / Monads | 7.2 Monads | Lab 07: Monads | Released: HW 07 Monadic Eval |
+| Wed Oct 21 | | [7.1 Functors](modules/07.1-functors-generalizing-map.md) |  | **Due:** [HW 06 PicPlot Part 2: Parsing](assignments/hw06.md) · 11:59pm |
+| Thu Oct 22 | **Class 15** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | Lab 07: Monads | Released: HW 07 Monadic Eval |
 
 ## Week 9 — October 26–29
 

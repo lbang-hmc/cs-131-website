@@ -70,6 +70,8 @@ nav:
       - "05.1: Environments, Scope, and Closures": modules/05.1-environments-scope-closures.md
       - "06.1: From Source Text to Structure": modules/06.1-from-source-text-to-structure.md
       - "06.2: Practical Parsing with Parser Combinators": modules/06.2-practical-parsing-with-parser-combinators.md
+      - "07.1: Functors — Generalizing map": modules/07.1-functors-generalizing-map.md
+      - "07.2: Monads — Composing Computations": modules/07.2-monads-composing-computations.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md
