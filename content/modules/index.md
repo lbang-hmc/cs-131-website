@@ -12,7 +12,7 @@ An overview of course modules will be posted here as they're published. To start
 - [**05.1: Environments, Scope, and Closures**](05.1-environments-scope-closures.md) — replacing substitution with an environment of bindings, adding `let` as syntactic sugar for function application, dynamic vs. static scope, and closures as a function paired with its defining environment.
 - [**06.1: From Source Text to Structure**](06.1-from-source-text-to-structure.md) — parsing as the missing arrow from concrete syntax to abstract syntax, reading context-free grammars, tokens, and the difference between keywords and identifiers.
 - [**06.2: Practical Parsing with Parser Combinators**](06.2-practical-parsing-with-parser-combinators.md) — using the course's parser-combinator library to build parsers that mirror grammar rules directly, sequencing, alternatives, repetition, and constructing ASTs as you parse.
-- [**07.1: Functors — Generalizing `map`**](07.1-functors-generalizing-map.md) — recognizing `map` as one instance of a general pattern: the `Functor` typeclass, `fmap` for trees and `Maybe`, and the two functor laws.
+- [**07.1: Functors — Generalizing `map`**](07.1-functors-generalizing-map.md) — recognizing `map` as one instance of a general pattern: writing your own type classes and instances, the `Functor` typeclass, `fmap` for trees and `Maybe`, and the two functor laws.
 - [**07.2: Monads — Composing Computations**](07.2-monads-composing-computations.md) — composing functions that return `Maybe` by factoring out the failure-checking plumbing into bind (`>>=`), `pure`, `do` notation, and how other monads give sequencing different meanings.
 
 !!! note "Coming soon"
