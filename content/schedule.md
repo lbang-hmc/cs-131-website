@@ -73,46 +73,45 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Oct 19 | 🎉 *Fall Break — no class* | | | |
 | Tue Oct 20 | 🎉 *Fall Break — no class* | | | |
-| Wed Oct 21 | | [7.1 Functors](modules/07.1-functors-generalizing-map.md) |  | **Due:** [HW 06 PicPlot Part 2: Parsing](assignments/hw06.md) · 11:59pm |
-| Thu Oct 22 | **Class 15** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | Lab 07: Monads | Released: HW 07 Monadic Eval |
+| Thu Oct 22 | **Class 15** — 🟪 *Flexible* — Functors / Monads | [7.1 Functors](modules/07.1-functors-generalizing-map.md) |  | **Due:** [HW 06 PicPlot Part 2: Parsing](assignments/hw06.md) · 11:59pm |
 
 ## Week 9 — October 26–29
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Oct 26 | | | | |
-| Tue Oct 27 | **Class 16** — 🟪 *Flexible* — Lambda Calc | 8.1 Lambda Calc |  |  |
-| Thu Oct 29 | **Class 17** — 🟪 *Flexible* — Lambda Calc | 8.2 Lambda Calc |  |  |
+| Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | Lab 07: Monads | Released: HW 07 Monadic Eval |
+| Thu Oct 29 | **Class 17** |  |  |  |
 
 ## Week 10 — November 2–5
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Nov 2 | | | | **Due:** HW 07 Monadic Eval · 11:59pm |
-| Tue Nov 3 | **Class 18** — 🟧 *Together* — Lambda Calc | 8.3 Lambda Calc | Lab 08: LC | Released: HW 08 Lambda Calc |
-| Thu Nov 5 | **Class 19** — 🟪 *Flexible* — Lambda Calc | Lambda Calc |  |  |
+| Tue Nov 3 | **Class 18** — 🟪 *Flexible* — Lambda Calc | 8.1 Lambda Calc |  |  |
+| Thu Nov 5 | **Class 19** — 🟪 *Flexible* — Lambda Calc | 8.2 Lambda Calc |  | Released: HW 08 Lambda Calc |
 
 ## Week 11 — November 9–12
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 9 | | | | **Due:** HW 08 Lambda Calc · 11:59pm |
-| Tue Nov 10 | **Class 20** — 🟧 *Together* — Lambda Calc → Raskell | 9.1 LC → Raskell | Lab 09: S-Exps (Raskell) | Released: HW 09 Raskell Eval |
-| Thu Nov 12 | **Class 21** — 🟪 *Flexible* — Lambda Calc → Raskell | 9.2 LC → Raskell |  |  |
+| Mon Nov 9 | | | | |
+| Tue Nov 10 | **Class 20** — 🟧 *Together* — Lambda Calc | 8.3 Lambda Calc | Lab 08: Lambda Calc |  |
+| Thu Nov 12 | **Class 21** — 🟪 *Flexible* — Lambda Calc | Lambda Calc | 📝 **Quiz 3** |  |
 
 ## Week 12 — November 16–19
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 16 | | | | **Due:** HW 09 Raskell Eval · 11:59pm |
-| Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell |  | Lab 10: Parsing S-Exps | Released: HW 10 Raskell Parser |
-| Thu Nov 19 | **Class 23** — 🟪 *Flexible* — Types | 10.1 Types | 📝 **Quiz 3** |  |
+| Mon Nov 16 | | | | **Due:** HW 08 Lambda Calc · 11:59pm |
+| Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell | 9.1 LC → Raskell | Lab 09: S-Exps (Raskell) | Released: HW 09 Raskell |
+| Thu Nov 19 | **Class 23** — 🟪 *Flexible* — Lambda Calc → Raskell | 9.2 LC → Raskell |  |  |
 
 ## Week 13 — November 23–26
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 23 | | | | **Due:** HW 10 Raskell Parser · 11:59pm |
+| Mon Nov 23 | | | | **Due:** HW 09 Raskell · 11:59pm |
 | Tue Nov 24 | 🎉 *Thanksgiving Break — no class* | | | |
 | Thu Nov 26 | 🎉 *Thanksgiving Break — no class* | | | |
 
@@ -120,14 +119,13 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Tue Dec 1 | **Class 24** — 🟧 *Together* — Types | 10.2 Types | Lab 11: Types | Released: HW 11: Types |
-| Thu Dec 3 | **Class 25** — 🟧 *Together* — Types | 10.3 Types |  |  |
+| Tue Dec 1 | **Class 24** — 🟧 *Together* — Types | 10.1 Types | Lab 10: Types | Released: HW 10: Types |
+| Thu Dec 3 | **Class 25** — 🟪 *Flexible* — Types | 10.2 Types |  |  |
 
 ## Week 15 — December 7–10
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Dec 7 | | | | **Due:** HW 11: Types · 11:59pm |
-| Tue Dec 8 | **Class 26** — 🟧 *Together* — peoPLe | 14.1 peoPLe | Lab 12: peoPLe | Released: HW 12: peoPLe |
-| Thu Dec 10 | **Class 27** — 🟧 *Together* — peoPLe |  | 📝 **Quiz 4** | **Due:** HW 12: peoPLe · 11:59pm |
-
+| Mon Dec 7 | | | | **Due:** HW 10: Types · 11:59pm |
+| Tue Dec 8 | **Class 26** — 🟧 *Together* — Wrap up | 10.3 Types |  |  |
+| Thu Dec 10 | **Class 27** — 🟧 *Together* — Wrap up |  | 📝 **Quiz 4** |  |
