@@ -80,7 +80,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Oct 26 | | | | |
-| Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | Lab 07: Monads | Released: HW 07 Monadic Eval |
+| Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | [Lab 07: From Higher-Order Functions to Monads](labs/lab07.md) | Released: HW 07 Monadic Eval |
 | Thu Oct 29 | **Class 17** |  |  |  |
 
 ## Week 10 — November 2–5
