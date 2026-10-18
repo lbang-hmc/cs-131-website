@@ -55,6 +55,9 @@ Every exercise in Part 1 is **the same move**: gluing small functions together i
 
 Keep that table in mind. By the end of Part 1 you'll have gone from `map show [1, 2, 3]` to the operator at the heart of every monad. After you edit the file, use `:reload` in `ghci`.
 
+!!! tip "Move quickly through the warmups"
+    The first few sections (HOF Warmup through Functors) are just quick reminders to set up the real work of the lab, which starts at **Monads** and continues through Part 2. Don't get hung up on them or spend too long. Go through them quickly, give short answers, and save your time for the monad sections.
+
 ### HOF Warmup
 
 The jargon ("pointfree", "functors", "monads") sounds a bit scary, but all of it grows out of something you already know well: **higher-order functions (HOFs)**.
