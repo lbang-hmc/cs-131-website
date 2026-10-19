@@ -9,6 +9,7 @@ An overview of assignments will be posted here as they're published. To start:
 - [**HW 5: PicPlot Part 1: Compiling**](hw05.md) — writing a compiler in Haskell for `piq`, a small pen-plotter drawing language, from abstract syntax to plotter Python, including environments, loops, and procedures.
 - [**HW 5: Environment Walkthroughs**](hw05-env-walkthroughs.md) — worked, step-by-step traces of the environment through assignment, loops, and procedure calls, for the compiler you build in HW 5.
 - [**HW 6: PicPlot Part 2: Parsing**](hw06.md) — writing a parser for `piq` with parser combinators, from source text to the abstract syntax your HW 5 compiler consumes, including precedence, associativity, blocks, loops, and procedures.
+- [**HW 7: Discovering Monads by Building Interpreters**](hw07.md) — four versions of one tiny evaluator (plain, error-reporting, counting, tracing), then refactoring all four into monadic form to discover `pure` and `>>=` as the reusable plumbing.
 
 !!! note "Coming soon"
     The rest of the assignment list will be posted here as the semester develops. Assignments are submitted on Gradescope.
