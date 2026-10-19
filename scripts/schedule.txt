@@ -46,12 +46,12 @@ Week	Day	Date	Event	Modality	Topic	Module Completion Due 11am	Activity Due in Cl
 6	Tues	10-06-2026	Class 11	Together	Parsing	6.1 Parsing 	Lab 06: Parsing	HW 06 PicPlot Parsing 		OOPSLA-ISSTA
 6	Thur	10-08-2026	Class 12	Flexible	Parsing	6.2 Parser Combinators 				OOPSLA-ISSTA
 7	Mon	10-12-2026							HW 06 PicPlot Part 2: Parsing 	
-7	Tues	10-13-2026	Class 13	Together	Functors / Monads	7.1 Functors 	Lab 07: Monads	HW 07 Monadic Eval 		
+7	Tues	10-13-2026	Class 13	Together	Functors / Monads	7.1 Functors 	Lab 07: Monads	HW 07: Discovering Monads by Building Interpreters 		
 7	Thur	10-15-2026	Class 14	Together	Functors / Monads	7.2 Monads 	QUIZ 2			
 8	Mon	10-19-2026								
 8	Tues	10-20-2026	FALL BREAK							
 8	Thur	10-22-2026	Class 15		Lambda Calc	8.1 Lambda Calc				
-9	Mon	10-26-2026							HW 07 Monadic Eval 	
+9	Mon	10-26-2026							HW 07: Discovering Monads by Building Interpreters 	
 9	Tues	10-27-2026	Class 16	Together	Lambda Calc	9.1 Lambda Calc 	Lab 08: LC	HW 08 Lambda Calc		
 9	Thur	10-29-2026	Class 17	Flexible 	Lambda Calc	9.2 Lambda Calc 				
 10	Mon	11-02-2026							HW 08 Lambda Calc	

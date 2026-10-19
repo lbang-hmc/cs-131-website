@@ -293,7 +293,7 @@ The itemized point values for each category are below.
     | HW 04: Little Languages (RegEx, Art) | 100 |
     | HW 05: PicPlot Part 1: Compiling | 100 |
     | HW 06: PicPlot Part 2: Parsing | 100 |
-    | HW 07: Monadic Eval | 100 |
+    | HW 07: Discovering Monads by Building Interpreters | 100 |
     | HW 08: Lambda Calc | 100 |
     | HW 09: Raskell Eval | 100 |
     | HW 10: Raskell Parser | 100 |
