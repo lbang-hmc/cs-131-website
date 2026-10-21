@@ -105,7 +105,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Nov 16 | | | | **Due:** HW 08 Lambda Calc · 11:59pm |
 | Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell | 9.1 LC → Raskell | Lab 09: S-Exps (Raskell) | Released: HW 09 Raskell |
-| Thu Nov 19 | **Class 23** — 🟪 *Flexible* — Lambda Calc → Raskell | 9.2 LC → Raskell | 📝 **Quiz 3** |  |
+| Thu Nov 19 | **Class 23** — 🟧 *Together* — Lambda Calc → Raskell | 9.2 LC → Raskell | 📝 **Quiz 3** |  |
 
 ## Week 13 — November 23–26
 
