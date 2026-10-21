@@ -322,7 +322,7 @@ Look at how far you came: from `map show [1, 2, 3]` to defining your own monad i
 - `fmap` composes a plain function with a boxed value.
 - `>>=` composes functions that produce boxes. In the calculator, the "box" is a computation that carries a stack. That's what lets you write a sequence of steps without writing out the plumbing.
 
-You'll keep running into that last idea. Any time a computation carries some extra context (a value that might be missing, a state threaded through each step, a parse that might fail), a monad is how Haskell lets you sequence it cleanly. In [HW 7](../assignments/hw07.md) you'll build that idea up yourself, starting from four versions of one tiny evaluator.
+You'll keep running into that last idea. Any time a computation carries some extra context (a value that might be missing, a state threaded through each step, a parse that might fail), a monad is how Haskell lets you sequence it cleanly. In HW 7 you'll build that idea up yourself, starting from four versions of one tiny evaluator.
 
 !!! question "Gradescope: wrap-up"
     Share any thoughts on this lab's format, plus any other comments or questions, directly on Gradescope.

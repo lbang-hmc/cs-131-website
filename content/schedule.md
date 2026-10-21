@@ -80,14 +80,14 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Oct 26 | | | | |
-| Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | [Lab 07: From Higher-Order Functions to Monads](labs/lab07.md) | Released: [HW 07: Discovering Monads by Building Interpreters](assignments/hw07.md) |
+| Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | [Lab 07: From Higher-Order Functions to Monads](labs/lab07.md) | Released: HW 07: Discovering Monads by Building Interpreters |
 | Thu Oct 29 | **Class 17** |  |  |  |
 
 ## Week 10 — November 2–5
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 2 | | | | **Due:** [HW 07: Discovering Monads by Building Interpreters](assignments/hw07.md) · 11:59pm |
+| Mon Nov 2 | | | | **Due:** HW 07: Discovering Monads by Building Interpreters · 11:59pm |
 | Tue Nov 3 | **Class 18** — 🟪 *Flexible* — Lambda Calc | 8.1 Lambda Calc |  |  |
 | Thu Nov 5 | **Class 19** — 🟪 *Flexible* — Lambda Calc | 8.2 Lambda Calc |  | Released: HW 08 Lambda Calc |
 
