@@ -97,7 +97,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Nov 9 | | | | |
 | Tue Nov 10 | **Class 20** — 🟧 *Together* — Lambda Calc | 8.3 Lambda Calc | Lab 08: Lambda Calc |  |
-| Thu Nov 12 | **Class 21** — 🟪 *Flexible* — Lambda Calc | Lambda Calc | 📝 **Quiz 3** |  |
+| Thu Nov 12 | **Class 21** — 🟪 *Flexible* — Lambda Calc | Lambda Calc |  |  |
 
 ## Week 12 — November 16–19
 
@@ -105,7 +105,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Nov 16 | | | | **Due:** HW 08 Lambda Calc · 11:59pm |
 | Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell | 9.1 LC → Raskell | Lab 09: S-Exps (Raskell) | Released: HW 09 Raskell |
-| Thu Nov 19 | **Class 23** — 🟪 *Flexible* — Lambda Calc → Raskell | 9.2 LC → Raskell |  |  |
+| Thu Nov 19 | **Class 23** — 🟪 *Flexible* — Lambda Calc → Raskell | 9.2 LC → Raskell | 📝 **Quiz 3** |  |
 
 ## Week 13 — November 23–26
 
