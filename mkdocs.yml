@@ -53,6 +53,9 @@ extra_javascript:
 not_in_nav: |
   /labs/lab02.md
   /assignments/hw07.md
+  /modules/08.1-lambda-calculus-foundations.md
+  /modules/08.2-encoding-data-with-functions.md
+  /modules/08.3-self-application-recursion-fixed-points.md
 
 nav:
   - Home: index.md
