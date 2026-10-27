@@ -280,7 +280,7 @@ Open `MonadicCalculator.hs` and compare it to `Calculator.hs`. A few things to k
 - `fmap` applies a plain function to a value inside a box.
 - `>>=` chains functions that each *return* a box. In the calculator, the box is a computation that carries a stack, which is why `do` notation can hide the stack completely.
 
-That last pattern comes up whenever a computation carries some extra context: a value that might be missing, state that has to be passed from step to step, or a parse that might fail. In HW 7 you'll build it up yourself, starting from four versions of one small evaluator.
+That last pattern comes up whenever a computation carries some extra context: a value that might be missing, state that has to be passed from step to step, or a parse that might fail. In [HW 7](../assignments/hw07.md) you'll build it up yourself, starting from four versions of one small evaluator.
 
 !!! tip "Checking your work"
     Now that you've finished, you can compare your answers with the [`solutions/` folder](https://github.com/hmc-cs-131-fa-2026/monad-lab/tree/main/solutions) in the repo. Its `README.md` has answers to the written questions, and the `.hs` files are complete, working versions you can load in `ghci` from inside that folder.
