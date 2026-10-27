@@ -25,6 +25,9 @@
 !!! note "Gradescope"
     As you work, complete the **Lab 07** assignment on Gradescope. You don't submit the repo. You edit the files, try things in `ghci`, and type your answers (code and short explanations) into Gradescope. Each **Gradescope question** box below matches a question there.
 
+!!! note "Solutions"
+    The repo includes a `solutions/` folder with answers to every question. Give the lab your best shot on your own first. Look at the solutions after the lab, or once you've really run out of ideas. Getting stuck and working your way out is where most of the learning happens.
+
 !!! question "Gradescope check: starter code"
     Confirm on Gradescope that you cloned the repo and that `ghci HigherOrderExercises.hs` says `Ok, one module loaded.`
 
@@ -278,6 +281,9 @@ Open `MonadicCalculator.hs` and compare it to `Calculator.hs`. A few things to k
 - `>>=` chains functions that each *return* a box. In the calculator, the box is a computation that carries a stack, which is why `do` notation can hide the stack completely.
 
 That last pattern comes up whenever a computation carries some extra context: a value that might be missing, state that has to be passed from step to step, or a parse that might fail. In HW 7 you'll build it up yourself, starting from four versions of one small evaluator.
+
+!!! tip "Checking your work"
+    Now that you've finished, you can compare your answers with the [`solutions/` folder](https://github.com/hmc-cs-131-fa-2026/monad-lab/tree/main/solutions) in the repo. Its `README.md` has answers to the written questions, and the `.hs` files are complete, working versions you can load in `ghci` from inside that folder.
 
 !!! question "Gradescope: wrap-up"
     Share any thoughts on this lab's format, plus any other comments or questions, directly on Gradescope.
