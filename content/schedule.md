@@ -81,7 +81,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Oct 26 | | | | |
 | Tue Oct 27 | **Class 16** — 🟧 *Together* — Functors / Monads | [7.2 Monads](modules/07.2-monads-composing-computations.md) | [Lab 07: From Higher-Order Functions to Monads](labs/lab07.md) | Released: [HW 07: Discovering Monads by Building Interpreters](assignments/hw07.md) |
-| Thu Oct 29 | **Class 17** |  |  |  |
+| Thu Oct 29 | **Class 17** — 🟪 *Flexible* — Functors / Monads |  |  |  |
 
 ## Week 10 — November 2–5
 
