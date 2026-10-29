@@ -52,7 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /modules/08.1-lambda-calculus-foundations.md
   /modules/08.2-encoding-data-with-functions.md
   /modules/08.3-self-application-recursion-fixed-points.md
 
@@ -75,6 +74,7 @@ nav:
       - "06.2: Practical Parsing with Parser Combinators": modules/06.2-practical-parsing-with-parser-combinators.md
       - "07.1: Functors — Generalizing map": modules/07.1-functors-generalizing-map.md
       - "07.2: Monads — Composing Computations": modules/07.2-monads-composing-computations.md
+      - "08.1: Lambda Calculus Foundations": modules/08.1-lambda-calculus-foundations.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md

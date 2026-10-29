@@ -88,7 +88,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
 | Mon Nov 2 | | | | **Due:** [HW 07: Discovering Monads by Building Interpreters](assignments/hw07.md) · 11:59pm |
-| Tue Nov 3 | **Class 18** — 🟪 *Flexible* — Lambda Calc | 8.1 Lambda Calc |  |  |
+| Tue Nov 3 | **Class 18** — 🟪 *Flexible* — Lambda Calc | [8.1 Lambda Calc](modules/08.1-lambda-calculus-foundations.md) |  |  |
 | Thu Nov 5 | **Class 19** — 🟪 *Flexible* — Lambda Calc | 8.2 Lambda Calc |  | Released: HW 08 Lambda Calc |
 
 ## Week 11 — November 9–12

@@ -14,6 +14,7 @@ An overview of course modules will be posted here as they're published. To start
 - [**06.2: Practical Parsing with Parser Combinators**](06.2-practical-parsing-with-parser-combinators.md) — using the course's parser-combinator library to build parsers that mirror grammar rules directly, sequencing, alternatives, repetition, and constructing ASTs as you parse.
 - [**07.1: Functors — Generalizing `map`**](07.1-functors-generalizing-map.md) — recognizing `map` as one instance of a general pattern: writing your own type classes and instances, the `Functor` typeclass, `fmap` for trees and `Maybe`, and the two functor laws.
 - [**07.2: Monads — Composing Computations**](07.2-monads-composing-computations.md) — composing functions that return `Maybe` by factoring out the failure-checking plumbing into bind (`>>=`), `pure`, `do` notation, and how other monads give sequencing different meanings.
+- [**08.1: Lambda Calculus Foundations**](08.1-lambda-calculus-foundations.md) — a whole programming language with nothing but functions: reading lambda expressions, bound and free variables, β-reduction, α-renaming, normal forms and nontermination, and experimenting with the `lc` interpreter.
 
 !!! note "Coming soon"
     The rest of the module list will be posted here as the semester develops.
