@@ -52,8 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /modules/08.2-encoding-data-with-functions.md
-  /modules/08.3-self-application-recursion-fixed-points.md
 
 nav:
   - Home: index.md
@@ -75,6 +73,8 @@ nav:
       - "07.1: Functors — Generalizing map": modules/07.1-functors-generalizing-map.md
       - "07.2: Monads — Composing Computations": modules/07.2-monads-composing-computations.md
       - "08.1: Lambda Calculus Foundations": modules/08.1-lambda-calculus-foundations.md
+      - "08.2: Encoding Data with Functions": modules/08.2-encoding-data-with-functions.md
+      - "08.3: Self-Application, Recursion, and Fixed Points": modules/08.3-self-application-recursion-fixed-points.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md

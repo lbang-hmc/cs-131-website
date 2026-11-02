@@ -15,6 +15,8 @@ An overview of course modules will be posted here as they're published. To start
 - [**07.1: Functors — Generalizing `map`**](07.1-functors-generalizing-map.md) — recognizing `map` as one instance of a general pattern: writing your own type classes and instances, the `Functor` typeclass, `fmap` for trees and `Maybe`, and the two functor laws.
 - [**07.2: Monads — Composing Computations**](07.2-monads-composing-computations.md) — composing functions that return `Maybe` by factoring out the failure-checking plumbing into bind (`>>=`), `pure`, `do` notation, and how other monads give sequencing different meanings.
 - [**08.1: Lambda Calculus Foundations**](08.1-lambda-calculus-foundations.md) — a whole programming language with nothing but functions: reading lambda expressions, bound and free variables, β-reduction, α-renaming, normal forms and nontermination, and experimenting with the `lc` interpreter.
+- [**08.2: Encoding Data with Functions**](08.2-encoding-data-with-functions.md) — Booleans that choose, pairs that remember, tagged lists, and Church numerals that repeat: representing data with nothing but functions, in preparation for Lab 08.
+- [**08.3: Self-Application, Recursion, and Fixed Points**](08.3-self-application-recursion-fixed-points.md) — sets as functions, Russell's paradox as self-application, fixed points, the Y combinator, and recursion without names.
 
 !!! note "Coming soon"
     The rest of the module list will be posted here as the semester develops.
