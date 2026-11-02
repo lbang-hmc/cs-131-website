@@ -1,4 +1,4 @@
-DEPLOY_HOST := bang@knuth
+DEPLOY_HOST := bang@knuth.cs.hmc.edu
 DEPLOY_PATH := ~/public_html/cs131
 
 .PHONY: serve build clean deploy

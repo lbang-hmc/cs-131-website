@@ -3,3 +3,4 @@ site/
 __pycache__/
 *.pyc
 README.html
+.claude/settings.local.json
