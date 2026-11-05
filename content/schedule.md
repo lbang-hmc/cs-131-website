@@ -89,7 +89,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Nov 2 | | | | **Due:** [HW 07: Discovering Monads by Building Interpreters](assignments/hw07.md) · 11:59pm |
 | Tue Nov 3 | **Class 18** — 🟪 *Flexible* — Lambda Calc | [8.1 Lambda Calc](modules/08.1-lambda-calculus-foundations.md) |  |  |
-| Thu Nov 5 | **Class 19** — 🟧 *Together* — Lambda Calc | [8.2 Lambda Calc](modules/08.2-encoding-data-with-functions.md) | [Lab 08: Lambda Calc](labs/lab08.md) | Released: HW 08 Lambda Calc |
+| Thu Nov 5 | **Class 19** — 🟧 *Together* — Lambda Calc | [8.2 Lambda Calc](modules/08.2-encoding-data-with-functions.md) | [Lab 08: Lambda Calc](labs/lab08.md) | Released: [HW 08: Lambda Calculus](assignments/hw08.md) |
 
 ## Week 11 — November 9–12
 
@@ -103,7 +103,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 16 | | | | **Due:** HW 08 Lambda Calc · 11:59pm |
+| Mon Nov 16 | | | | **Due:** [HW 08: Lambda Calculus](assignments/hw08.md) · 11:59pm |
 | Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell | 9.1 LC → Raskell | Lab 09: S-Exps (Raskell) | Released: HW 09 Raskell |
 | Thu Nov 19 | **Class 23** — 🟧 *Together* — Lambda Calc → Raskell | 9.2 LC → Raskell | 📝 **Quiz 3** |  |
 

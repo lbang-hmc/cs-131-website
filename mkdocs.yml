@@ -52,7 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /assignments/hw08.md
 
 nav:
   - Home: index.md
@@ -86,6 +85,7 @@ nav:
       - "HW 5: Environment Walkthroughs": assignments/hw05-env-walkthroughs.md
       - "HW 6: PicPlot Part 2: Parsing": assignments/hw06.md
       - "HW 7: Discovering Monads by Building Interpreters": assignments/hw07.md
+      - "HW 8: Lambda Calculus": assignments/hw08.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md

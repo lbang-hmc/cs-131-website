@@ -1,6 +1,6 @@
 # Lab 8: Lambda Calculus Encodings
 
-[Module 08.1](../modules/08.1-lambda-calculus-foundations.md) introduced the lambda calculus and the `lc` interpreter. [Module 08.2](../modules/08.2-encoding-data-with-functions.md) showed how Booleans, pairs, lists, and numbers can all be encoded as functions. In this lab, you write the missing pieces yourself. Part 1 finishes the list operations, and Part 2 builds arithmetic on Church numerals. HW 08 uses these same encodings, so the time you spend here pays off there.
+[Module 08.1](../modules/08.1-lambda-calculus-foundations.md) introduced the lambda calculus and the `lc` interpreter. [Module 08.2](../modules/08.2-encoding-data-with-functions.md) showed how Booleans, pairs, lists, and numbers can all be encoded as functions. In this lab, you write the missing pieces yourself. Part 1 finishes the list operations, and Part 2 builds arithmetic on Church numerals. [HW 08](../assignments/hw08.md) uses these same encodings, so the time you spend here pays off there.
 
 ## Objectives
 
@@ -30,6 +30,9 @@
 
 !!! note "Solutions"
     The repo includes a `solution/` folder with a finished `encoding.lc`. Give the lab your best shot on your own first. Look at the solution after the lab, or once you've really run out of ideas.
+
+!!! tip "You've done this before"
+    Remember [Higher-Order Arithmetic in HW 2](../assignments/hw02.md#higher-order-arithmetic)? `applyN f n x` applied `f` to `x`, `n` times, and you built `addition` and `multiplication` from it and `increment`. That's exactly what a Church numeral does, so you were already doing lambda calculus without knowing it. If you get stuck on `Plus` or `Times` in Part 2, go back and look at how you wrote `addition` and `multiplication`.
 
 ---
 
