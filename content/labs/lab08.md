@@ -42,7 +42,7 @@ lc
 :load encoding.lc
 ```
 
-`lc` lists the macros it just loaded. `True`, `False`, `Not`, `And`, `Or`, `Pair`, `Fst`, `Snd`, `Nil`, `Cons`, `Succ`, `IsZero`, `Pred`, and `Monus` are already correct. You'll fix the rest.
+`lc` lists the macros it just loaded. Six of them are placeholders you'll replace: `IsNil`, `Head`, and `Tail` in Part 1, and `Plus`, `Times`, and `NextPair` in Part 2. `Pred` and `Monus` are written for you, but they're built on `NextPair`, so they won't give correct answers until you've fixed it. Everything else (`True`, `False`, `Not`, `And`, `Or`, `Pair`, `Fst`, `Snd`, `Nil`, `Cons`, `Succ`, and `IsZero`) already works.
 
 !!! example "Try it in lc - nothing to submit"
     Evaluate
