@@ -93,6 +93,7 @@ nav:
       - "Lab 5: Two Ways to Draw: Plotter Python and piq": labs/lab05.md
       - "Lab 6: A First Look at Parsing piq": labs/lab06.md
       - "Lab 7: From Higher-Order Functions to Monads": labs/lab07.md
+      - "Lab 8: Lambda Calculus Encodings": labs/lab08.md
   - FAQ: faq.md
   - How-To Guides:
       - how-to/index.md
