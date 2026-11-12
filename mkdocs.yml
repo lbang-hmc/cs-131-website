@@ -75,6 +75,7 @@ nav:
       - "08.1: Lambda Calculus Foundations": modules/08.1-lambda-calculus-foundations.md
       - "08.2: Encoding Data with Functions": modules/08.2-encoding-data-with-functions.md
       - "08.3: Self-Application, Recursion, and Fixed Points": modules/08.3-self-application-recursion-fixed-points.md
+      - "09.1: From Lambda Calculus to S-Expressions": modules/09.1-from-lambda-calculus-to-s-expressions.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md

@@ -17,6 +17,7 @@ An overview of course modules will be posted here as they're published. To start
 - [**08.1: Lambda Calculus Foundations**](08.1-lambda-calculus-foundations.md) — a whole programming language with nothing but functions: reading lambda expressions, bound and free variables, β-reduction, α-renaming, normal forms and nontermination, and experimenting with the `lc` interpreter.
 - [**08.2: Encoding Data with Functions**](08.2-encoding-data-with-functions.md) — Booleans that choose, pairs that remember, tagged lists, and Church numerals that repeat: representing data with nothing but functions, in preparation for Lab 08.
 - [**08.3: Self-Application, Recursion, and Fixed Points**](08.3-self-application-recursion-fixed-points.md) — sets as functions, Russell's paradox as self-application, fixed points, the Y combinator, and recursion without names.
+- [**09.1: From Lambda Calculus to S-Expressions**](09.1-from-lambda-calculus-to-s-expressions.md) — from lambda calculus toward a Racket-like language: S-expressions as trees, quotation and the code/data distinction, building and inspecting lists with `cons`, `first`, and `rest`, and why `quote` and `if` are special forms.
 
 !!! note "Coming soon"
     The rest of the module list will be posted here as the semester develops.
