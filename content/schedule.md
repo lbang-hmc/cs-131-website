@@ -105,7 +105,7 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 |---|---|---|---|---|
 | Mon Nov 16 | | | | **Due:** [HW 08: Lambda Calculus](assignments/hw08.md) · 11:59pm |
 | Tue Nov 17 | **Class 22** — 🟧 *Together* — Lambda Calc → Raskell | [9.1 LC → Raskell](modules/09.1-from-lambda-calculus-to-s-expressions.md) | [Lab 09: Exploring Raskell](labs/lab09.md) | Released: [HW 09: Raskell](assignments/hw09.md) |
-| Thu Nov 19 | **Class 23** — 🟧 *Together* — Lambda Calc → Raskell | [9.2 LC → Raskell](modules/09.2-building-a-small-lisp-interpreter.md) | 📝 **Quiz 3** |  |
+| Thu Nov 19 | **Class 23** — 🟧 *Together* — Lambda Calc → Raskell | [9.2 LC → Raskell](modules/09.2-building-a-small-lisp-interpreter.md) | 📝 **[Quiz 3](quizzes/index.md)** |  |
 
 ## Week 13 — November 23–26
 

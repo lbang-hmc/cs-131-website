@@ -20,5 +20,13 @@ To help you prepare, here's a set of practice problems covering the same materia
 
 - [**Quiz 2 Practice Problems (PDF)**](files/cs131_quiz2_practice.pdf)
 
+## Quiz 3 — Nov 19
+
+Quiz 3 covers Modules 6–8: grammars, parse trees, and parser combinators; functors, `Maybe`, and monads; and the lambda calculus, Church encodings, and fixed points.
+
+To help you prepare, here's a set of practice problems covering the same material (ungraded, optional, solutions not included):
+
+- [**Quiz 3 Practice Problems (PDF)**](files/cs131_quiz3_practice.pdf)
+
 !!! note "More quizzes coming soon"
-    Practice problems for Quizzes 3–4 will be posted here as the semester develops.
+    Practice problems for Quiz 4 will be posted here as the semester develops.
