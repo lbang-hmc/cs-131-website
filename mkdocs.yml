@@ -52,7 +52,6 @@ extra_javascript:
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
   /labs/lab02.md
-  /modules/09.2-building-a-small-lisp-interpreter.md
 
 nav:
   - Home: index.md
@@ -77,6 +76,7 @@ nav:
       - "08.2: Encoding Data with Functions": modules/08.2-encoding-data-with-functions.md
       - "08.3: Self-Application, Recursion, and Fixed Points": modules/08.3-self-application-recursion-fixed-points.md
       - "09.1: From Lambda Calculus to S-Expressions": modules/09.1-from-lambda-calculus-to-s-expressions.md
+      - "09.2: Building a Small Lisp Interpreter": modules/09.2-building-a-small-lisp-interpreter.md
   - Assignments:
       - assignments/index.md
       - "HW 1: peoPLe": assignments/hw01.md
@@ -88,6 +88,7 @@ nav:
       - "HW 6: PicPlot Part 2: Parsing": assignments/hw06.md
       - "HW 7: Discovering Monads by Building Interpreters": assignments/hw07.md
       - "HW 8: Lambda Calculus": assignments/hw08.md
+      - "HW 9: Raskell": assignments/hw09.md
   - Labs:
       - labs/index.md
       - "Lab 1: Getting Connected and Running Haskell": labs/lab01.md
@@ -97,6 +98,7 @@ nav:
       - "Lab 6: A First Look at Parsing piq": labs/lab06.md
       - "Lab 7: From Higher-Order Functions to Monads": labs/lab07.md
       - "Lab 8: Lambda Calculus Encodings": labs/lab08.md
+      - "Lab 9: Exploring Raskell": labs/lab09.md
   - FAQ: faq.md
   - How-To Guides:
       - how-to/index.md

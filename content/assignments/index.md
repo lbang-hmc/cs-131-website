@@ -11,6 +11,7 @@ An overview of assignments will be posted here as they're published. To start:
 - [**HW 6: PicPlot Part 2: Parsing**](hw06.md) — writing a parser for `piq` with parser combinators, from source text to the abstract syntax your HW 5 compiler consumes, including precedence, associativity, blocks, loops, and procedures.
 - [**HW 7: Discovering Monads by Building Interpreters**](hw07.md) — four versions of one tiny evaluator (plain, error-reporting, counting, tracing), then refactoring all four into monadic form to discover `pure` and `>>=` as the reusable plumbing.
 - [**HW 8: Lambda Calculus**](hw08.md) — comparisons, `Maybe`, lists, and binary trees encoded as functions, Fibonacci with no recursion, and the 3n + 1 step count built with `Y`, all in the `lc` interpreter.
+- [**HW 9: Raskell**](hw09.md) — extending the Raskell interpreter with arithmetic, conditionals, `let`, `map`, and `foldl`, then writing `filter`, `reverse`, and a Collatz program in Raskell itself.
 
 !!! note "Coming soon"
     The rest of the assignment list will be posted here as the semester develops. Assignments are submitted on Gradescope.

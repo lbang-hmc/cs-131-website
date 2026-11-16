@@ -10,6 +10,7 @@ Labs are in-class, hands-on sessions — mostly working directly in `ghci`, with
 - [**Lab 6: A First Look at Parsing piq**](lab06.md) — practicing the course's parser combinator library directly in `ghci`, then writing a small, deliberately restricted slice of real `piq` parsing before HW6 asks for the whole grammar.
 - [**Lab 7: From Higher-Order Functions to Monads**](lab07.md) — a staircase from higher-order functions and pointfree style through composition and `fmap` to `>>=`, then one stack-calculator program rewritten three ways until the homemade combinator turns out to be a monad.
 - [**Lab 8: Lambda Calculus Encodings**](lab08.md) — writing `IsNil`, `Head`, and `Tail` for tagged lists and `Plus`, `Times`, and Kleene's predecessor for Church numerals in the `lc` interpreter, with the encodings HW 08 builds on.
+- [**Lab 9: Exploring Raskell**](lab09.md) — running the Raskell interpreter next to Racket, tracing a program through its parser and evaluator, and implementing `rest`.
 
 !!! note "Coming soon"
     Labs will be posted here as the semester develops. Each one will be linked from the [schedule](../schedule.md) on the day it runs.

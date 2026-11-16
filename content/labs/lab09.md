@@ -1,0 +1,190 @@
+# Lab 9: Exploring Raskell
+
+[Module 09.1](../modules/09.1-from-lambda-calculus-to-s-expressions.md) introduced S-expressions, and [Module 09.2](../modules/09.2-building-a-small-lisp-interpreter.md) described how an interpreter for them is put together. In this lab, you meet the real thing: **Raskell**, a small Racket-like language whose interpreter is written in Haskell. You run it next to Racket, find where each stage of the interpreter lives, follow one program through it, and then add a feature yourself: the list operation `rest`. [HW 09](../assignments/hw09.md) grows this same interpreter into a language you can write real programs in.
+
+## Objectives
+
+- Run Raskell programs in the REPL and from files, and compare the results with Racket's.
+- Find the parser, the syntax and value datatypes, the evaluator, and the REPL in the starter code.
+- Trace one program through parsing, closure creation, and function application.
+- Implement `rest`, and test it, including on inputs that should be errors.
+
+!!! note "How you'll get the starter code"
+    The starter code is a public repository, [`hmc-cs-131-fa-2026/raskell-lab`](https://github.com/hmc-cs-131-fa-2026/raskell-lab). On the course server, clone it directly. You don't need to make your own copy first:
+
+    ```bash
+    cd cs131
+    git clone https://github.com/hmc-cs-131-fa-2026/raskell-lab.git
+    cd raskell-lab
+    ```
+
+    See [Connecting to the Server with VS Code](../how-to/connecting-with-vscode.md) if you haven't gotten to a terminal on the server yet.
+
+!!! note "Gradescope"
+    Answer the questions in the **Lab 09** assignment on Gradescope as you reach them, and upload your `RaskEval.hs` at the end. Lab credit is for completion, not correctness, but finish `rest`. HW 09 builds on it.
+
+    Work on your own copy and submit individually. Talking problems over with the people around you is encouraged.
+
+---
+
+## Part 0: Start Raskell
+
+From the `raskell-lab` folder, start the REPL:
+
+```bash
+./rask
+```
+
+The first time, `./rask` compiles the interpreter, which takes a few seconds. Then you get a `raskell>` prompt. Try:
+
+```racket
+((lambda (x) x) 'apple)
+```
+
+You should see `apple`. It's a **symbol value**, the data that `'apple` stands for. It's not a variable and not a quoted piece of syntax. Type `:q` to leave the REPL.
+
+Raskell can also run a program stored in a file. The `examples/` folder has a few:
+
+```bash
+./rask --file examples/cat.rask
+```
+
+Finally, run the tests:
+
+```bash
+./run-tests
+```
+
+The tests in `00-baseline` should all pass. The ones in `01-rest` fail for now. Making them pass is Part 3.
+
+!!! tip "Editing a program over several lines"
+    In the REPL, an expression can span several lines. If you press Enter while a `(` is still open, Raskell shows a `...>` prompt and keeps reading. A `;` starts a comment, both in files and at the prompt.
+
+---
+
+## Part 1: Compare Racket with Raskell
+
+Raskell is a **subset** of Racket, with a few small differences. Racket is installed on the course server, so you can check what a Racket-like expression *should* do. In a second terminal, start Racket:
+
+```bash
+racket
+```
+
+Evaluate each of these in **both** Racket and Raskell:
+
+```racket
+'(a b c)
+(cons 'a '(b c))
+((lambda (x) (cons x '())) 'apple)
+```
+
+You should see the same lists, with one difference in how they're printed. Racket's REPL puts a quote in front of a list or symbol result (`'(a b c)`), and Raskell doesn't (`(a b c)`). Leave Racket with `(exit)`.
+
+Raskell doesn't do arithmetic or `if` yet. Try `(+ 1 2)` in both and see what happens. That isn't a bug in the starter. Arithmetic, conditionals, and more are what you add in the homework.
+
+!!! question "Gradescope: Racket and Raskell"
+    **Submit this response on Gradescope.**
+
+    Paste what Racket printed and what Raskell printed for `(cons 'a '(b c))`. Then name one expression that works in Racket but that Raskell doesn't handle yet, and say what Raskell printed for it.
+
+---
+
+## Part 2: Find the stages of the interpreter
+
+Open the starter files in VS Code. Each one has one job:
+
+| File | What it does |
+| --- | --- |
+| `RaskParser.hs` | Turns source text into an `SExpr`: the program's structure, before anything is evaluated. |
+| `RaskAST.hs` | Defines `SExpr` and `Value` (what evaluating a program produces), plus printing and helpers for checking arguments. |
+| `RaskEval.hs` | Evaluates an `SExpr` in an environment, producing either an error message or a `Value`. |
+| `Rask.hs` | The REPL and the file runner. It reads input, calls the parser and the evaluator, and prints the result. |
+| `ParserCombinators.hs`, `ParserBase.hs` | **PROVIDED: DO NOT EDIT.** The course's parser-combinator library, the same one you used for piq. You don't need to understand how these files are implemented. |
+
+Skim `RaskAST.hs` first. Find the two datatypes, `SExpr` and `Value`, and notice that they're separate: one describes programs, the other describes results. Then open `RaskEval.hs` and find `eval`. Each equation handles one kind of expression.
+
+Now follow this program through the interpreter:
+
+```racket
+((lambda (x) (cons x '())) 'cat)
+```
+
+It's in `examples/cat.rask`. Work through these steps with a partner, finding the code for each one:
+
+1. **Parse.** The parser produces an `SList` with two elements. The first is the `lambda` expression. The second is `'cat`, which the parser has turned into `(quote cat)`. Write out the whole `SExpr` using the constructors from `RaskAST.hs`.
+2. **Evaluate the function.** `eval` sees a list whose first element isn't `quote` or `lambda`, so it's an application. It evaluates the first element, the `lambda` expression. Which `eval` equation handles that, and which helper does it call? The result is a `VClosure`. What three things does it hold?
+3. **Evaluate the argument.** `(quote cat)` is a special form. Which function handles it, and what value does it produce?
+4. **Apply.** `apply` receives the closure and the argument values. Where does it create the binding of `x` to the symbol `cat`? Which environment does it extend: the one where the closure was *made*, or the one where it's *called*?
+5. **Evaluate the body.** `(cons x '())` is an ordinary application of the primitive `cons`. Find `primCons`. What does it receive, and what does it return?
+
+!!! question "Gradescope: Tracing a program"
+    **Submit this response on Gradescope.**
+
+    In two to four sentences: where is the binding of `x` created when this program runs, and what is `x` bound to? Why does the argument have to be `'cat` and not just `cat`? (If you're not sure, try `((lambda (x) (cons x '())) cat)` in Raskell.)
+
+---
+
+## Part 3: Implement `rest`
+
+`first` already works: `(first '(a b c))` is `a`. Your job is its partner, `rest`, which returns everything *after* the first element:
+
+| Expression | Result |
+| --- | --- |
+| `(rest '(a b c))` | `(b c)` |
+| `(rest '(z))` | `()` |
+| `(rest '(a (b c) d))` | `((b c) d)` |
+| `(rest (cons 'a '(b c)))` | `(b c)` |
+| `(rest '())` | an error |
+| `(rest 'a)` | an error |
+
+`rest` needs a **nonempty** list. Anything else is an error, and it should be a Raskell error message, not a Haskell crash.
+
+In `RaskEval.hs`, find `primRest` (search for `TODO`). Right now it always gives the error `rest: not implemented yet`. Replace it with a real implementation.
+
+Before you write anything, read `primFirst` just above it, closely. Like every primitive, it receives its arguments **already evaluated**, as a list of `Value`s. Its type is
+
+```haskell
+primRest :: [Value] -> Either String Value
+```
+
+- Look at how `primFirst` checks that it got exactly one argument and that the argument is a list. `oneArg` and `expectList` are defined in `RaskAST.hs`.
+- Think about the data: a nonempty list has a first element and the rest of the list. What should `rest` return for each?
+- Your result has to be a `Value`. What constructor wraps a list of values?
+
+You don't need to change the parser, `Value`, or `eval`. `rest` is already listed in the `primitives` table, so the evaluator can find it.
+
+`./rask` recompiles automatically when you change a `.hs` file. If your code has a type error, you'll see GHC's message when you run `./rask` or `./run-tests`.
+
+---
+
+## Part 4: Test it
+
+Run the tests for `rest`:
+
+```bash
+./run-tests 01
+```
+
+Each test is a small `.rask` file in `tests/01-rest/`. Its first line says what output it expects. A test that expects `error` passes for any Raskell error message. When a test fails, `run-tests` shows the program, what it expected, and what your interpreter printed.
+
+Then run all the tests with `./run-tests`, to make sure `00-baseline` still passes.
+
+Finally, write a test of your own. Make it an expression that uses `rest` **together with** another feature, such as a `lambda`, `cons`, `first`, or another `rest`. For example, write a function that returns the second element of a list. Run it in the REPL, or save it in a file and use `./rask --file`.
+
+!!! question "Gradescope: Checking `rest`"
+    **Submit these responses on Gradescope.**
+
+    1. Do all the tests pass? If not, which ones still fail?
+    2. Paste the expression you wrote, and what Raskell printed for it.
+    3. In two to four sentences, explain how `(rest '(a b c))` becomes `(b c)`. Start from the source text and name the parts of the interpreter it passes through on the way.
+
+!!! example "If you finish early - nothing to submit"
+    - What happens if you evaluate `('a 'b)`, where the first element isn't a function? Find the line of `RaskEval.hs` that produces the message.
+    - Compare `'(cons 'a '())` with `(cons 'a '())`. Why are the results different?
+    - Look at how `apply` handles a `VPrim` and how it handles a `VClosure`. Why does only one of them call `eval`?
+
+---
+
+## Submitting
+
+Make sure `./run-tests` compiles and runs, then upload your `RaskEval.hs` to **Lab 09** on Gradescope and answer the questions there.
