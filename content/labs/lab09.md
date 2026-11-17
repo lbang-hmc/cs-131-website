@@ -194,16 +194,30 @@ The Raskell program is in `examples/cat.rask`. Work through these steps (with a 
 
 In `RaskEval.hs`, find `primRest` (search for `TODO`). Right now it always gives the error `rest: not implemented yet`. Replace it with a real implementation.
 
-Before you write anything, read `primFirst` just above it, closely. Like every primitive, it receives its arguments **already evaluated**, as a list of `Value`s. Its type is
+Before you write anything, read `primFirst`, just above it. `rest` will have almost the same shape. Here it is:
 
 ```haskell
-primRest :: [Value] -> Value
+primFirst :: [Value] -> Value
+primFirst [xs] =
+    case expectList "first" xs of
+        (x : _) -> x
+        []      -> error "first: expected a nonempty list, got ()"
+primFirst args = error (arityMessage "first" 1 (length args))
 ```
 
-- Look at how `primFirst` is written as two equations. The first, `primFirst [xs]`, matches exactly one argument. The second matches anything else and reports the wrong number of arguments with `error`.
-- `expectList` (in `RaskAST.hs`) returns the elements of a list value, or stops with an error if the value isn't a list.
-- Think about the data: a nonempty list has a first element and the rest of the list. What should `rest` return for each?
-- Your result has to be a `Value`. What constructor wraps a list of values?
+Like every primitive, `primFirst` receives its arguments **already evaluated**, as a Haskell list of `Value`s, and it returns one `Value`. Here's how it works, piece by piece:
+
+- **Two equations, for the number of arguments.** The pattern `[xs]` matches a list with exactly one element, so the first equation handles a call with exactly one argument. Any other number of arguments falls through to the second equation. That one stops with an error message, such as `first: expected 1 argument, got 2`. (`arityMessage`, in `RaskAST.hs`, builds that message.)
+- **`expectList` checks that the argument is a list.** The argument `xs` is a `Value`. If it's a `VList`, `expectList "first" xs` returns the Haskell list of `Value`s inside it. If it's anything else, such as the symbol `a`, it stops with `first: expected a list, got a`. The `"first"` is there so the message names the operation.
+- **`case` handles the two kinds of list.** A nonempty list matches `(x : _)`, and `first` returns its head, `x`. An empty list matches `[]`, and that's an error, because the empty list has no first element.
+
+For example, in `(first '(a b c))`, `primFirst` receives `[VList [VSymbol "a", VSymbol "b", VSymbol "c"]]`. That's one argument, so the first equation applies. `expectList` returns `[VSymbol "a", VSymbol "b", VSymbol "c"]`, which matches `(x : _)`, so the result is `VSymbol "a"`.
+
+To write `primRest :: [Value] -> Value`, keep the same structure and change three things:
+
+1. Use `"rest"` in place of `"first"` everywhere, so the error messages name the right operation.
+2. In the nonempty case, keep the **tail** of the list instead of the head. Change the pattern so it gives that part a name.
+3. Make sure the result is a `Value`. `first` returns `x`, which is already a `Value`. The tail is a Haskell list, `[Value]`, so it has to be wrapped first. Which `Value` constructor holds a list of values?
 
 You don't need to change the parser, `Value`, or `eval`. `rest` is already listed in the `primitives` table, so the evaluator can find it.
 
