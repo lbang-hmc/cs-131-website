@@ -205,10 +205,15 @@ primFirst [xs] =
 primFirst args = error (arityMessage "first" 1 (length args))
 ```
 
-Like every primitive, `primFirst` receives its arguments **already evaluated**, as a Haskell list of `Value`s, and it returns one `Value`. Here's how it works, piece by piece:
+`first` takes exactly **one argument**, and that argument must be a **list**, as in `(first '(a b c))`. So there are two different lists involved, and it helps to keep them apart:
 
-- **Two equations, for the number of arguments.** The pattern `[xs]` matches a list with exactly one element, so the first equation handles a call with exactly one argument. Any other number of arguments falls through to the second equation. That one stops with an error message, such as `first: expected 1 argument, got 2`. (`arityMessage`, in `RaskAST.hs`, builds that message.)
-- **`expectList` checks that the argument is a list.** The argument `xs` is a `Value`. If it's a `VList`, `expectList "first" xs` returns the Haskell list of `Value`s inside it. If it's anything else, such as the symbol `a`, it stops with `first: expected a list, got a`. The `"first"` is there so the message names the operation.
+- **The argument list.** Every primitive receives its arguments, already evaluated, as a Haskell list of `Value`s, one element per argument. For `(first '(a b c))`, that's a Haskell list with one element: `[VList [VSymbol "a", VSymbol "b", VSymbol "c"]]`.
+- **The Raskell list.** That one argument is itself a Raskell list, `VList [VSymbol "a", VSymbol "b", VSymbol "c"]`, the thing `first` takes apart.
+
+Here's how `primFirst` works, piece by piece:
+
+- **Two equations: is there exactly one argument?** The first equation's pattern, `[xs]`, matches an *argument list* with exactly one element, and names that one argument `xs`. So it handles calls like `(first '(a b c))`. Any other number of arguments, such as `(first)` or `(first '(a) '(b))`, doesn't match `[xs]`, so it falls through to the second equation, `primFirst args`. That one stops with an error message, such as `first: expected 1 argument, got 2`. (`arityMessage`, in `RaskAST.hs`, builds that message.)
+- **`expectList`: is that one argument a list?** At this point we know there's exactly one argument, `xs`, but not what kind of `Value` it is. If it's a `VList`, `expectList "first" xs` returns the Haskell list of `Value`s inside it. If it's anything else, such as the symbol `a`, it stops with `first: expected a list, got a`. The `"first"` is there so the message names the operation.
 - **`case` handles the two kinds of list.** A nonempty list matches `(x : _)`, and `first` returns its head, `x`. An empty list matches `[]`, and that's an error, because the empty list has no first element.
 
 For example, in `(first '(a b c))`, `primFirst` receives `[VList [VSymbol "a", VSymbol "b", VSymbol "c"]]`. That's one argument, so the first equation applies. `expectList` returns `[VSymbol "a", VSymbol "b", VSymbol "c"]`, which matches `(x : _)`, so the result is `VSymbol "a"`.
