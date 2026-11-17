@@ -105,26 +105,7 @@ Open the starter files in VS Code. Each one has one job:
 
 Skim `RaskAST.hs` first. Find the two datatypes, `SExpr` and `Value`, and notice that they're separate: one describes programs, the other describes results. Then open `RaskEval.hs` and find `eval`. Each equation handles one kind of expression.
 
-!!! note "`Either`: `Maybe` with a reason"
-    Every function in the evaluator returns `Either String Value`. `Either` is a standard Haskell type, `data Either a b = Left a | Right b`. It works like the `Maybe` you used in Module 7, except that a failure carries a message.
-
-    | `Maybe Value` | `Either String Value` | Meaning |
-    | --- | --- | --- |
-    | `Just v` | `Right v` | success, with result `v` ("right" as in correct) |
-    | `Nothing` | `Left "first: expected a list, got 3"` | failure, with an explanation |
-
-    `Either String` is a monad just as `Maybe` is, so `do` notation works the same way. Each `x <- ...` line unwraps a `Right`. The first `Left` stops the whole block and becomes its result. Here's `primFirst`:
-
-    ```haskell
-    primFirst args = do
-        xsv <- oneArg "first" args       -- Left if there isn't exactly one argument
-        xs  <- expectList "first" xsv    -- Left if the argument isn't a list
-        case xs of
-            (x : _) -> Right x
-            []      -> Left "first: expected a nonempty list, got ()"
-    ```
-
-    For example, `primFirst [VNumber 3]` stops on the second line with `Left "first: expected a list, got 3"`. In an `Either` block, `return v` means `Right v`.
+`eval` takes an expression and returns its `Value`. When a Raskell program is wrong, the interpreter stops by calling Haskell's `error` with a message, such as `error "first: expected a nonempty list, got ()"`. Raskell catches it and prints `error: first: expected a nonempty list, got ()`, then keeps running.
 
 Now follow this program through the interpreter:
 
@@ -162,30 +143,30 @@ The Raskell program is in `examples/cat.rask`. Work through these steps (with a 
     - To check this yourself, load `RaskParser.hs` in `ghci` and evaluate `parseRask "((lambda (x) (cons x '())) 'cat)"`.
 
 2. **Evaluate the function.** Start at `eval` in `RaskEval.hs` (line 41). It has one equation for each kind of expression, and Haskell tries them in order.
-    - The outer list doesn't start with `quote` or `lambda`, so it reaches the **application** equation (lines 59–62).
-    - Line 60 evaluates the first element, `fexpr`, which is the `lambda` expression.
-    - That call matches the `lambda` equation (line 55), which calls `evalLambda` (lines 87–89).
-    - The result is a `VClosure` (see the definition of `Value` in `RaskAST.hs`, lines 48–49). It holds three things:
+    - The outer list doesn't start with `quote` or `lambda`, so it reaches the **application** equation (lines 61–62).
+    - Line 62 evaluates the first element, `fexpr`, which is the `lambda` expression. (Ignore `forceValue` and `forceAll`. They only make sure Haskell, which is lazy, finishes computing the function and its arguments before the call.)
+    - That call matches the `lambda` equation (line 55), which calls `evalLambda` (line 87).
+    - The result is a `VClosure` (see the definition of `Value` in `RaskAST.hs`, lines 51–52). It holds three things:
         - the environment where the `lambda` was evaluated, which here is `initEnv` (just the primitives);
         - the parameter names, `["x"]`;
         - the body, still unevaluated: the `SExpr` for `(cons x '())`.
 
-3. **Evaluate the argument.** Back in the application equation, line 61 evaluates each argument expression.
+3. **Evaluate the argument.** Back in the application equation, line 62 also evaluates each argument expression, with `map (eval env) argexprs`.
     - Our only argument is `(quote cat)`. It matches the `quote` equation (line 54), which calls `evalQuote` (lines 80–81).
-    - `evalQuote` hands the unevaluated `SExpr` to `quoteToValue` (`RaskAST.hs`, lines 82–86).
+    - `evalQuote` hands the unevaluated `SExpr` to `quoteToValue` (`RaskAST.hs`, lines 85–89).
     - The symbol `cat` becomes the value `VSymbol "cat"`. Nothing is evaluated, so `cat` is never looked up as a variable.
 
-4. **Apply.** Line 62 calls `apply` with the closure from step 2 and the list of argument values from step 3.
+4. **Apply.** Line 62 then calls `apply` with the closure from step 2 and the list of argument values from step 3.
     - A closure matches the `VClosure` equation (lines 67–71).
     - On line 71, `envExtend` (lines 28–29) binds the parameter names to the argument values.
     - It extends `closureEnv`, the environment stored in the closure, where the function was *made*, not the one where it's *called*. That's what makes Raskell's scope lexical.
     - The new environment is `initEnv` plus one binding: `x` ↦ `VSymbol "cat"`.
 
-5. **Evaluate the body.** Line 71 then calls `eval` on the body, `(cons x '())`, in the extended environment. This is another ordinary application, so we're back on lines 59–62.
+5. **Evaluate the body.** Line 71 then calls `eval` on the body, `(cons x '())`, in the extended environment. This is another ordinary application, so we're back on lines 61–62.
     - Evaluating the symbol `cons` looks it up (line 48) and finds the primitive that `initEnv` put there (lines 32–33).
     - Evaluating `x` looks it up too.
     - Evaluating `'()` goes through `evalQuote` again.
-    - `apply` uses its `VPrim` equation (line 66), which calls `primCons` (lines 107–111).
+    - `apply` uses its `VPrim` equation (line 66), which calls `primCons` (lines 105–107).
     - Looking up `x` finds `VSymbol "cat"`, from the binding made in step 4.
     - `primCons` receives `[VSymbol "cat", VList []]` and returns `VList [VSymbol "cat"]`, which prints as `(cat)`.
 
@@ -216,10 +197,11 @@ In `RaskEval.hs`, find `primRest` (search for `TODO`). Right now it always gives
 Before you write anything, read `primFirst` just above it, closely. Like every primitive, it receives its arguments **already evaluated**, as a list of `Value`s. Its type is
 
 ```haskell
-primRest :: [Value] -> Either String Value
+primRest :: [Value] -> Value
 ```
 
-- Look at how `primFirst` checks that it got exactly one argument and that the argument is a list. `oneArg` and `expectList` are defined in `RaskAST.hs`. (The "`Either`: `Maybe` with a reason" box in Part 2 walks through how its `do` block works.)
+- Look at how `primFirst` is written as two equations. The first, `primFirst [xs]`, matches exactly one argument. The second matches anything else and reports the wrong number of arguments with `error`.
+- `expectList` (in `RaskAST.hs`) returns the elements of a list value, or stops with an error if the value isn't a list.
 - Think about the data: a nonempty list has a first element and the rest of the list. What should `rest` return for each?
 - Your result has to be a `Value`. What constructor wraps a list of values?
 
