@@ -91,6 +91,8 @@ Raskell doesn't do arithmetic or `if` yet. Try `(+ 1 2)` in both and see what ha
 
 ## Part 2: Find the stages of the interpreter
 
+You won't write any code in this part. The goal is to get to know the interpreter you've been given. Being able to open someone else's language implementation, find its parts, and see how they fit together is a valuable skill. It's also what you need before you can add anything to it. In Part 3 you'll add a feature to this interpreter, and the homework is all about adding more. Time spent reading the code now will pay off in both.
+
 Open the starter files in VS Code. Each one has one job:
 
 | File | What it does |
