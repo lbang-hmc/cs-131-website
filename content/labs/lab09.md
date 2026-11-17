@@ -175,6 +175,31 @@ The Raskell program is in `examples/cat.rask`. Work through these steps (with a 
 
     In two to three sentences: why does the argument have to be `'cat` and not just `cat`? Try `((lambda (x) (cons x '())) cat)` in Raskell, and use what you saw in the trace to explain the error.
 
+### The parser: almost nothing to it
+
+Before you add `rest`, look at the first stage, the parser. Open `RaskParser.hs` and find `sexpr` (line 33), `quoted` (line 40), `list` (line 44), and `atom` (line 48). That's the whole grammar of Raskell:
+
+- an **atom**: a number, `#t` or `#f`, or anything else, which becomes a symbol;
+- a **list**: `(`, then any number of S-expressions, then `)`;
+- **`'e`**, which is shorthand for `(quote e)`.
+
+Notice what's missing. The parser never mentions `rest`, `cons`, `lambda`, `if`, or any other word. To the parser, `(rest '(a b))` is just a list whose first element happens to be a symbol:
+
+```haskell
+SList [SSymbol "rest", SList [SSymbol "quote", SList [SSymbol "a", SSymbol "b"]]]
+```
+
+The meaning of a word comes later, from the evaluator. A primitive like `rest` means something because `initEnv` binds the name to a function, using the `primitives` table. A special form like `lambda` means something because `eval` has an equation that matches it at the front of a list.
+
+Compare that with piq in HW 6, where every new operator meant new grammar rules, plus decisions about precedence and associativity. Raskell's parser was written once, in about 30 lines, and it never changes. Everything you add, in Part 3 and in all of HW 9, is purely about evaluation. This is a big part of why Lisps are such good languages for building interpreters, and it's the payoff of "code is data" from Module 09.1: every program has the same simple shape.
+
+!!! question "Gradescope: The parser"
+    **Submit these responses on Gradescope.**
+
+    1. Write out the `SExpr` that the parser produces for `(if (first '(#t)) 1 2)`.
+    2. Now type `(if (first '(#t)) 1 2)` into Raskell. It parses fine, but what happens when it's evaluated, and why?
+    3. In two to three sentences: in Part 3, you'll add `rest` to Raskell without changing `RaskParser.hs` at all. Why is that possible? Where does the meaning of a word like `rest` or `if` come from instead?
+
 ---
 
 ## Part 3: Implement `rest`
