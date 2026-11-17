@@ -121,7 +121,7 @@ It's an anonymous function that puts its argument in a one-element list, applied
 
 The Haskell version is a slight cheat. Haskell has no built-in symbols, so we used the string `"cat"` in place of the symbol `'cat` just to give you something familiar. Symbols are a feature Racket and Raskell have and Haskell doesn't. A symbol is a name used as data: you can put it in a list and pass it around, and it never gets looked up as a variable.
 
-The Raskell program is in `examples/cat.rask`. Work through these steps (with a partner, if you like). Line numbers refer to the starter files, before you've edited anything. Each step ends with a question (**?**) for you to answer.
+The Raskell program is in `examples/cat.rask`. Work through these steps (with a partner, if you like). Line numbers refer to the starter files, before you've edited anything.
 
 1. **Parse.** The parser turns the text into one `SExpr`:
 
@@ -144,24 +144,29 @@ The Raskell program is in `examples/cat.rask`. Work through these steps (with a 
     - The outer list doesn't start with `quote` or `lambda`, so it reaches the **application** equation (lines 59–62).
     - Line 60 evaluates the first element, `fexpr`, which is the `lambda` expression.
     - That call matches the `lambda` equation (line 55), which calls `evalLambda` (lines 87–89).
-    - **?** `evalLambda` returns a `VClosure`. Using the definition of `Value` (`RaskAST.hs`, lines 48–49), what three things does it hold for this program?
+    - The result is a `VClosure` (see the definition of `Value` in `RaskAST.hs`, lines 48–49). It holds three things:
+        - the environment where the `lambda` was evaluated, which here is `initEnv` (just the primitives);
+        - the parameter names, `["x"]`;
+        - the body, still unevaluated: the `SExpr` for `(cons x '())`.
 
 3. **Evaluate the argument.** Back in the application equation, line 61 evaluates each argument expression.
     - Our only argument is `(quote cat)`. It matches the `quote` equation (line 54), which calls `evalQuote` (lines 80–81).
     - `evalQuote` hands the unevaluated `SExpr` to `quoteToValue` (`RaskAST.hs`, lines 82–86).
-    - **?** Which `Value` comes back?
+    - The symbol `cat` becomes the value `VSymbol "cat"`. Nothing is evaluated, so `cat` is never looked up as a variable.
 
 4. **Apply.** Line 62 calls `apply` with the closure from step 2 and the list of argument values from step 3.
     - A closure matches the `VClosure` equation (lines 67–71).
     - On line 71, `envExtend` (lines 28–29) binds the parameter names to the argument values.
-    - **?** Which environment does it extend: the one stored in the closure, where the function was *made*, or the one where it's *called*? (Look at which name line 71 passes to `envExtend`.)
+    - It extends `closureEnv`, the environment stored in the closure, where the function was *made*, not the one where it's *called*. That's what makes Raskell's scope lexical.
+    - The new environment is `initEnv` plus one binding: `x` ↦ `VSymbol "cat"`.
 
 5. **Evaluate the body.** Line 71 then calls `eval` on the body, `(cons x '())`, in the extended environment. This is another ordinary application, so we're back on lines 59–62.
     - Evaluating the symbol `cons` looks it up (line 48) and finds the primitive that `initEnv` put there (lines 32–33).
     - Evaluating `x` looks it up too.
     - Evaluating `'()` goes through `evalQuote` again.
     - `apply` uses its `VPrim` equation (line 66), which calls `primCons` (lines 107–111).
-    - **?** What does looking up `x` find? What list of values does `primCons` receive, and what does it return?
+    - Looking up `x` finds `VSymbol "cat"`, from the binding made in step 4.
+    - `primCons` receives `[VSymbol "cat", VList []]` and returns `VList [VSymbol "cat"]`, which prints as `(cat)`.
 
 !!! question "Gradescope: Tracing a program"
     **Submit this response on Gradescope.**
