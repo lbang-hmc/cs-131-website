@@ -111,6 +111,14 @@ Now follow this program through the interpreter:
 ((lambda (x) (cons x '())) 'cat)
 ```
 
+In Haskell, the same program is
+
+```haskell
+(\x -> x : []) "cat"
+```
+
+It's an anonymous function that puts its argument in a one-element list, applied to `"cat"`. The result is `["cat"]`. The Raskell version produces `(cat)`. A quoted symbol like `'cat` plays roughly the role of the string `"cat"` here, and `cons` is Haskell's `:`.
+
 It's in `examples/cat.rask`. Work through these steps (with a partner, if you like). Line numbers refer to the starter files, before you've edited anything. Each step ends with a question (**?**) for you to answer.
 
 1. **Parse.** The parser turns the text into one `SExpr`:
