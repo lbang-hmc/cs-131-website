@@ -171,7 +171,7 @@ The Raskell program is in `examples/cat.rask`. Work through these steps (with a 
 !!! question "Gradescope: Tracing a program"
     **Submit this response on Gradescope.**
 
-    In two to four sentences: where is the binding of `x` created when this program runs, and what is `x` bound to? Why does the argument have to be `'cat` and not just `cat`? (If you're not sure, try `((lambda (x) (cons x '())) cat)` in Raskell.)
+    In two to three sentences: why does the argument have to be `'cat` and not just `cat`? Try `((lambda (x) (cons x '())) cat)` in Raskell, and use what you saw in the trace to explain the error.
 
 ---
 
