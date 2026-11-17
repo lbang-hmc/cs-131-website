@@ -109,7 +109,7 @@ Now follow this program through the interpreter:
 ((lambda (x) (cons x '())) 'cat)
 ```
 
-It's in `examples/cat.rask`. Work through these steps with a partner, finding the code for each one:
+It's in `examples/cat.rask`. Work through these steps (with a partner, if you like), finding the code for each one:
 
 1. **Parse.** The parser produces an `SList` with two elements. The first is the `lambda` expression. The second is `'cat`, which the parser has turned into `(quote cat)`. Write out the whole `SExpr` using the constructors from `RaskAST.hs`.
 2. **Evaluate the function.** `eval` sees a list whose first element isn't `quote` or `lambda`, so it's an application. It evaluates the first element, the `lambda` expression. Which `eval` equation handles that, and which helper does it call? The result is a `VClosure`. What three things does it hold?
