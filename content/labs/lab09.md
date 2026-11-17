@@ -266,7 +266,7 @@ Each test is a small `.rask` file in `tests/01-rest/`. Its first line says what 
 
 Then run all the tests with `./run-tests`, to make sure `00-baseline` still passes.
 
-Finally, write a test of your own. Make it an expression that uses `rest` **together with** another feature, such as a `lambda`, `cons`, `first`, or another `rest`. For example, write a function that returns the second element of a list. Run it in the REPL, or save it in a file and use `./rask --file`.
+Finally, try `rest` yourself in the REPL. You don't need to add anything to `tests/` or create a file. Just start `./rask` and type an expression that uses `rest` **together with** another feature, such as a `lambda`, `cons`, `first`, or another `rest`. For example, write a function that returns the second element of a list, and apply it to a list.
 
 !!! question "Gradescope: Checking `rest`"
     **Submit these responses on Gradescope.**
