@@ -119,7 +119,7 @@ In Haskell, the same program is
 
 It's an anonymous function that puts its argument in a one-element list, applied to `"cat"`. The result is `["cat"]`. The Raskell version produces `(cat)`. `cons` is Haskell's `:`.
 
-The Haskell version is a slight cheat. Haskell has no built-in symbols, so we used the string `"cat"` in place of the symbol `'cat` just to give you something familiar. Symbols are a feature Racket and Raskell have and Haskell doesn't. A symbol is a name you can use as data: you can compare it, store it in a list, and pass it around without it ever standing for a variable.
+The Haskell version is a slight cheat. Haskell has no built-in symbols, so we used the string `"cat"` in place of the symbol `'cat` just to give you something familiar. Symbols are a feature Racket and Raskell have and Haskell doesn't. A symbol is a name used as data: you can put it in a list and pass it around, and it never gets looked up as a variable.
 
 The Raskell program is in `examples/cat.rask`. Work through these steps (with a partner, if you like). Line numbers refer to the starter files, before you've edited anything. Each step ends with a question (**?**) for you to answer.
 
