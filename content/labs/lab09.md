@@ -105,6 +105,27 @@ Open the starter files in VS Code. Each one has one job:
 
 Skim `RaskAST.hs` first. Find the two datatypes, `SExpr` and `Value`, and notice that they're separate: one describes programs, the other describes results. Then open `RaskEval.hs` and find `eval`. Each equation handles one kind of expression.
 
+!!! note "`Either`: `Maybe` with a reason"
+    Every function in the evaluator returns `Either String Value`. `Either` is a standard Haskell type, `data Either a b = Left a | Right b`. It works like the `Maybe` you used in Module 7, except that a failure carries a message.
+
+    | `Maybe Value` | `Either String Value` | Meaning |
+    | --- | --- | --- |
+    | `Just v` | `Right v` | success, with result `v` ("right" as in correct) |
+    | `Nothing` | `Left "first: expected a list, got 3"` | failure, with an explanation |
+
+    `Either String` is a monad just as `Maybe` is, so `do` notation works the same way. Each `x <- ...` line unwraps a `Right`. The first `Left` stops the whole block and becomes its result. Here's `primFirst`:
+
+    ```haskell
+    primFirst args = do
+        xsv <- oneArg "first" args       -- Left if there isn't exactly one argument
+        xs  <- expectList "first" xsv    -- Left if the argument isn't a list
+        case xs of
+            (x : _) -> Right x
+            []      -> Left "first: expected a nonempty list, got ()"
+    ```
+
+    For example, `primFirst [VNumber 3]` stops on the second line with `Left "first: expected a list, got 3"`. In an `Either` block, `return v` means `Right v`.
+
 Now follow this program through the interpreter:
 
 ```racket
@@ -198,7 +219,7 @@ Before you write anything, read `primFirst` just above it, closely. Like every p
 primRest :: [Value] -> Either String Value
 ```
 
-- Look at how `primFirst` checks that it got exactly one argument and that the argument is a list. `oneArg` and `expectList` are defined in `RaskAST.hs`.
+- Look at how `primFirst` checks that it got exactly one argument and that the argument is a list. `oneArg` and `expectList` are defined in `RaskAST.hs`. (The "`Either`: `Maybe` with a reason" box in Part 2 walks through how its `do` block works.)
 - Think about the data: a nonempty list has a first element and the rest of the list. What should `rest` return for each?
 - Your result has to be a `Value`. What constructor wraps a list of values?
 
