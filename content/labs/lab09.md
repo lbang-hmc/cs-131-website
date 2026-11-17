@@ -109,13 +109,13 @@ Now follow this program through the interpreter:
 ((lambda (x) (cons x '())) 'cat)
 ```
 
-It's in `examples/cat.rask`. Work through these steps (with a partner, if you like), finding the code for each one:
+It's in `examples/cat.rask`. Work through these steps (with a partner, if you like). Each step names the code to look at. The line numbers refer to the starter files, before you've edited anything.
 
-1. **Parse.** The parser produces an `SList` with two elements. The first is the `lambda` expression. The second is `'cat`, which the parser has turned into `(quote cat)`. Write out the whole `SExpr` using the constructors from `RaskAST.hs`.
-2. **Evaluate the function.** `eval` sees a list whose first element isn't `quote` or `lambda`, so it's an application. It evaluates the first element, the `lambda` expression. Which `eval` equation handles that, and which helper does it call? The result is a `VClosure`. What three things does it hold?
-3. **Evaluate the argument.** `(quote cat)` is a special form. Which function handles it, and what value does it produce?
-4. **Apply.** `apply` receives the closure and the argument values. Where does it create the binding of `x` to the symbol `cat`? Which environment does it extend: the one where the closure was *made*, or the one where it's *called*?
-5. **Evaluate the body.** `(cons x '())` is an ordinary application of the primitive `cons`. Find `primCons`. What does it receive, and what does it return?
+1. **Parse.** The parser turns the text into one `SExpr`. The comment above `data SExpr` (`RaskAST.hs`, lines 18–25) shows what `((lambda (x) x) 'apple)` parses to, and our program has the same shape. The outer `SList` has two elements. The first is the `lambda` expression, which is itself an `SList` of three elements. The second is `'cat`, which the parser has turned into `(quote cat)`. Write out the whole `SExpr` for our program using `SList` and `SSymbol`.
+2. **Evaluate the function.** `eval` (`RaskEval.hs`, line 41) has one equation for each kind of expression, and Haskell tries them in order. The outer list doesn't start with `quote` or `lambda`, so it falls through to the application equation (lines 59–62). That equation evaluates the first element, `fexpr`, on line 60. Now `eval` is called on the `lambda` expression. Which equation matches it this time (lines 54–55)? Follow the call to `evalLambda` (lines 87–89). The result is a `VClosure`. Using the definition of `Value` (`RaskAST.hs`, lines 48–49), what three things does it hold for this program?
+3. **Evaluate the argument.** Back in the application equation, line 61 evaluates each argument expression. Our only argument is `(quote cat)`. Which `eval` equation matches it, and which function does that call? Follow it through `evalQuote` (lines 80–81) to `quoteToValue` (`RaskAST.hs`, lines 82–86). Which value comes back?
+4. **Apply.** Line 62 calls `apply` with the closure from step 2 and the list of argument values from step 3. A closure matches the `VClosure` equation (lines 67–71). On line 71, `envExtend` (lines 28–29) binds the parameter names to the argument values. Which environment does it extend: the one stored in the closure, where the function was *made*, or the one where it's *called*? (Look at which name line 71 uses.)
+5. **Evaluate the body.** Line 71 then calls `eval` on the body, `(cons x '())`, in that extended environment. This is another ordinary application, so we're back on lines 59–62. Evaluating the symbol `cons` looks it up (line 48) and finds the primitive that `initEnv` put there (lines 32–33). Evaluating `x` looks it up too. What does it find? Evaluating `'()` goes through `evalQuote` again. Then `apply` uses its `VPrim` equation (line 66), which calls `primCons` (lines 107–111). What list of values does `primCons` receive, and what does it return?
 
 !!! question "Gradescope: Tracing a program"
     **Submit this response on Gradescope.**
