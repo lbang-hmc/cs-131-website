@@ -48,6 +48,9 @@ markdown_extensions:
 extra_javascript:
   - javascripts/checklist-persist.js
 
+extra_css:
+  - stylesheets/extra.css
+
 # Pages hidden for early semester (kept as source/HTML, just not linked).
 # Remove entries here and restore them to `nav` above as they go live.
 not_in_nav: |
