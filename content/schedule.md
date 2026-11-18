@@ -111,15 +111,15 @@ See the syllabus's [Attendance](syllabus.md#attendance) section for the full pol
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Mon Nov 23 | | | | **Due:** [HW 09: Raskell](assignments/hw09.md) · 11:59pm |
-| Tue Nov 24 | 🎉 *Thanksgiving Break — no class* | | | |
+| Mon Nov 23 | | | | |
+| Tue Nov 24 | 🎉 *Thanksgiving Break — no class* | | | **Due:** [HW 09: Raskell](assignments/hw09.md) · 11:59pm |
 | Thu Nov 26 | 🎉 *Thanksgiving Break — no class* | | | |
 
 ## Week 14 — December 1–3
 
 | Date | Class | Module (due 9:30am) | Lab / Activity | Homework |
 |---|---|---|---|---|
-| Tue Dec 1 | **Class 24** — 🟧 *Together* — Types | 10.1 Types | Lab 10: Types | Released: HW 10: Types |
+| Tue Dec 1 | **Class 24** — 🟧 *Together* — Types | 10.1 Types | Lab 10: Types | Released: HW 10: Types · **Late due:** [HW 09: Raskell](assignments/hw09.md) · 11:59pm |
 | Thu Dec 3 | **Class 25** — 🟪 *Flexible* — Types | 10.2 Types |  |  |
 
 ## Week 15 — December 7–10
