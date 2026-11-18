@@ -110,6 +110,6 @@ Here `closure` refers to itself directly, through the environment it remembers.
 
 **Strict languages.** In a language like Python, where every definition is evaluated right away, you can't write two definitions that need each other. Real interpreters for strict languages do something else. HW 9's second "Think about it" question asks you to work out what goes wrong, and why mutation fixes it.
 
-**The Y combinator.** In [Module 08.3](../modules/08.3-self-application-recursion-fixed-points.md), you got recursion with no names at all. The Y combinator makes a function receive *itself* as an argument, through self-application. `letrec` gets the same result a different way: instead of passing the function to itself, it puts the function in its own environment. HW 9's third "Think about it" question has you try Y in Raskell.
+**The Y combinator.** In [Module 08.3](../modules/08.3-self-application-recursion-fixed-points.md), you got recursion with no names at all. The Y combinator makes a function receive *itself* as an argument, through self-application. `letrec` gets the same result a different way: instead of passing the function to itself, it puts the function in its own environment. An optional question in HW 9's Stage 3 has you try Y in Raskell.
 
 [Back to HW 9, Stage 3](hw09.md#letrec-an-optional-challenge)
